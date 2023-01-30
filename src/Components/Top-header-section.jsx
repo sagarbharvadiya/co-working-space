@@ -8,7 +8,7 @@ function Topheadersection(){
     const toggleModal= () => {sertModal(!modal)}
     return(
         <>
-            <a href="#" onClick={toggleModal} className="show-btn"><i class="fa-solid fa-bars"></i></a>
+            <a href="#" onClick={toggleModal} className="show-btn"><i className="fa-solid fa-bars"></i></a>
             {modal &&(
             <div className="Top-Header-section">
                 <div className="Topheaderwrapper">
@@ -26,11 +26,11 @@ function Topheadersection(){
                     </div>
                     <div className="serach-folder">
                         <a>Search</a>
-                        <a href="#" className="serach-icon"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        <a href="#" className="serach-icon"><i className="fa-solid fa-magnifying-glass"></i></a>
                     </div>
                     <div className="serach-input">
                         <input type="Search" className="inner-input" placeholder="Search..."/>
-                        <a href="#" className="serach-icon-btn"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        <a href="#" className="serach-icon-btn"><i className="fa-solid fa-magnifying-glass"></i></a>
                     </div>
                 </div>
             </div>
@@ -51,11 +51,11 @@ function Topheadersection(){
                     </div>
                     <div className="serach-folder-contenar">
                         <a>Search</a>
-                        <a href="#" className="serach-icons"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        <a href="#" className="serach-icons"><i className="fa-solid fa-magnifying-glass"></i></a>
                     </div>
                     <div className="serach-input-folder">
                         <input type="Search" className="inner-input-folder" placeholder="Search..."/>
-                        <a href="#" className="serach-icon-btn-folder"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        <a href="#" className="serach-icon-btn-folder"><i className="fa-solid fa-magnifying-glass"></i></a>
                     </div>
                 </div>
             </div>

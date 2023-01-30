@@ -38,12 +38,12 @@ function Spaceworkroomgrowsection() {
                     return (
                       <>
                         <div className="space-work-image">
-                          <img src={"http://localhost" + include.attributes.uri.url} />
+                          <img src={"http://localhost" + include.attributes.uri.url} alt="banner" />
                         </div>
                         <span>WE OFFER</span>
                         <h2>{post.attributes.field_what_we_offer_title.value}</h2>
                         <p>{post.attributes.field_what_we_offer_subtitle.value}</p>
-                        <a href="#" className="space-work-btn">
+                        <a href="/" className="space-work-btn">
                           Readmore
                         </a>
                       </>

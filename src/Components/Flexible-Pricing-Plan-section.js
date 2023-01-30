@@ -68,9 +68,9 @@ function Flexiblepriceplansection() {
                         </div>
                         <div className="flexible-price-btn">
                           <a href="#">
-                            <i class="fa-solid fa-arrow-right"></i>
+                            <i className="fa-solid fa-arrow-right"></i>
                           </a>
-                          <a href="#" class="Choose-Plan">
+                          <a href="#" className="Choose-Plan">
                             Choose a Plan
                           </a>
                         </div>

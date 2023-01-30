@@ -69,7 +69,7 @@ function Inforsection(){
                             </div> 
                         </div>  
                         <div className="info-blog-box-section">
-                            <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                            <a href="#"><i className="fa-solid fa-arrow-right"></i></a>
                             <p>View All Amenities</p>
                         </div>
                         <div className="info-blog-box-section">

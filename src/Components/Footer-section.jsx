@@ -17,11 +17,11 @@ function Footersection(){
                         <h2>Get Inspired to The Collaboration</h2>
                         <div className="get-collabration-btns">
                             <div className="call-btn">
-                                <a href="#"><i class="fa-solid fa-phone"></i></a>
+                                <a href="#"><i className="fa-solid fa-phone"></i></a>
                                 <a href="#" className="number">312-509-6995</a>
                             </div>
                             <div className="Appointment-btn">
-                                <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                                <a href="#"><i className="fa-solid fa-arrow-right"></i></a>
                                 <a href="#" className="Appointment">Appointment</a>
                             </div>
                         </div>
@@ -36,8 +36,8 @@ function Footersection(){
                                there anyone loves.
                             </p>
                             <div className="douwnlod-the-app">
-                                <a href="#"><i class="fa-brands fa-google-play"></i></a>
-                                <a href="#"><i class="fa-brands fa-apple"></i></a>
+                                <a href="#"><i className="fa-brands fa-google-play"></i></a>
+                                <a href="#"><i className="fa-brands fa-apple"></i></a>
                             </div>
                         </div>
                         <div className="Company">

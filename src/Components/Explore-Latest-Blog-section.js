@@ -60,7 +60,7 @@ function Explorelatestblogsection() {
                               <span>By: Admin</span>
                             </div>
                             <a href="#">
-                              <i class="fas fa-share-alt"></i>
+                              <i className="fas fa-share-alt"></i>
                             </a>
                           </div>
                           <h2>{post.attributes.field_blog_title.value}</h2>
@@ -76,7 +76,7 @@ function Explorelatestblogsection() {
                             </p>
                             <div className="explore-latest-btn">
                               <a href="#">
-                                <i class="fa-solid fa-arrow-right"></i>
+                                <i className="fa-solid fa-arrow-right"></i>
                               </a>
                               <a href="#" className="explore-latest-read-more">
                                 Read More

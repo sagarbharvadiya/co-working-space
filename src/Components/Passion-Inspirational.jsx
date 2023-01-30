@@ -50,7 +50,7 @@ function Passioninspirationalsection() {
                   </div>
                   <div className="Kodesk-difference-folder1">
                     <a href="#">
-                      <i class="fa-solid fa-arrow-right"></i>
+                      <i className="fa-solid fa-arrow-right"></i>
                     </a>
                     <a href="#" className="Kodesk-difference-read-more">
                       Read More
@@ -64,7 +64,7 @@ function Passioninspirationalsection() {
                   </div>
                   <div className="Kodesk-difference-folder1">
                     <a href="#">
-                      <i class="fa-solid fa-arrow-right"></i>
+                      <i className="fa-solid fa-arrow-right"></i>
                     </a>
                     <a href="#" className="Kodesk-difference-read-more">
                       Read More

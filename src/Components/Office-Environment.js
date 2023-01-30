@@ -85,9 +85,9 @@ function Officeenviroment() {
             </div>
             <div className="better-office-envirment-folder2">
               <a href="#">
-                <i class="fa-solid fa-arrow-right"></i>
+                <i className="fa-solid fa-arrow-right"></i>
               </a>
-              <a href="#" class="better-office-envirment-read-more">
+              <a href="#" className="better-office-envirment-read-more">
                 Read More
               </a>
             </div>
@@ -136,7 +136,7 @@ function Officeenviroment() {
                             </span>
                             <div className="office-envirment-des">
                               <p>
-                                <i class="fa-solid fa-location-dot"></i>{" "}
+                                <i className="fa-solid fa-location-dot"></i>{" "}
                                 {post.attributes.field_workspace_address.value.replace(
                                   /<\/?[^>]+(>|$)/g,
                                   ""
@@ -151,11 +151,11 @@ function Officeenviroment() {
                                 </span>
                                 <div className="office-envirment-user-folder">
                                   <p>
-                                    <i class="fa-solid fa-house"></i>{" "}
+                                    <i className="fa-solid fa-house"></i>{" "}
                                     {post.attributes.field_workspace_area}
                                   </p>
                                   <p>
-                                    <i class="fa-solid fa-user"></i>{" "}
+                                    <i className="fa-solid fa-user"></i>{" "}
                                     {post.attributes.field_workspace_capacity}
                                   </p>
                                 </div>

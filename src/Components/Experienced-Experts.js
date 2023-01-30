@@ -15,7 +15,7 @@ function Expriencedexperts() {
           <div className="d-flex">
             <div className="team-block">
               <div
-                class="team-block-one wow fadeInUp animated animated"
+                className="team-block-one wow fadeInUp animated animated"
                 data-wow-delay="00ms"
                 data-wow-duration="1500ms"
               >
@@ -29,7 +29,7 @@ function Expriencedexperts() {
                       <h2>
                         <a href="index.html">Benjamin</a>
                       </h2>
-                      <span class="designation">- Senior Manager</span>
+                      <span className="designation">- Senior Manager</span>
                     </div>
                     <div className="lower-content">
                       <figure className="signature pull-left">
@@ -37,30 +37,30 @@ function Expriencedexperts() {
                       </figure>
                       <ul className="list pull-right">
                         <li className="share-option">
-                          <a href="index.html" class="share-icon">
-                            <i class="fas fa-share-alt"></i>
+                          <a href="index.html" className="share-icon">
+                            <i className="fas fa-share-alt"></i>
                           </a>
-                          <ul class="share-links clearfix">
+                          <ul className="share-links clearfix">
                             <li>
                               <a href="index-3.html">
-                                <i class="fab fa-linkedin-in"></i>
+                                <i className="fab fa-linkedin-in"></i>
                               </a>
                             </li>
                             <li>
                               <a href="index-3.html">
-                                <i class="fab fa-twitter"></i>
+                                <i className="fab fa-twitter"></i>
                               </a>
                             </li>
                             <li>
                               <a href="index-3.html">
-                                <i class="fab fa-facebook-f"></i>
+                                <i className="fab fa-facebook-f"></i>
                               </a>
                             </li>
                           </ul>
                         </li>
                         <li>
                           <a href="tel:123456789123">
-                            <i class="fas fa-phone"></i>
+                            <i className="fas fa-phone"></i>
                           </a>
                         </li>
                       </ul>
@@ -71,7 +71,7 @@ function Expriencedexperts() {
             </div>
             <div className="team-block">
               <div
-                class="team-block-one wow fadeInUp animated animated"
+                className="team-block-one wow fadeInUp animated animated"
                 data-wow-delay="00ms"
                 data-wow-duration="1500ms"
               >
@@ -85,7 +85,7 @@ function Expriencedexperts() {
                       <h2>
                         <a href="index.html">Savannah</a>
                       </h2>
-                      <span class="designation">- CEO Founder</span>
+                      <span className="designation">- CEO Founder</span>
                     </div>
                     <div className="lower-content">
                       <figure className="signature pull-left">
@@ -93,30 +93,30 @@ function Expriencedexperts() {
                       </figure>
                       <ul className="list pull-right">
                         <li className="share-option">
-                          <a href="index.html" class="share-icon">
-                            <i class="fas fa-share-alt"></i>
+                          <a href="index.html" className="share-icon">
+                            <i className="fas fa-share-alt"></i>
                           </a>
-                          <ul class="share-links clearfix">
+                          <ul className="share-links clearfix">
                             <li>
                               <a href="index-3.html">
-                                <i class="fab fa-linkedin-in"></i>
+                                <i className="fab fa-linkedin-in"></i>
                               </a>
                             </li>
                             <li>
                               <a href="index-3.html">
-                                <i class="fab fa-twitter"></i>
+                                <i className="fab fa-twitter"></i>
                               </a>
                             </li>
                             <li>
                               <a href="index-3.html">
-                                <i class="fab fa-facebook-f"></i>
+                                <i className="fab fa-facebook-f"></i>
                               </a>
                             </li>
                           </ul>
                         </li>
                         <li>
                           <a href="tel:123456789123">
-                            <i class="fas fa-phone"></i>
+                            <i className="fas fa-phone"></i>
                           </a>
                         </li>
                       </ul>
@@ -127,7 +127,7 @@ function Expriencedexperts() {
             </div>
             <div className="team-block">
               <div
-                class="team-block-one wow fadeInUp animated animated"
+                className="team-block-one wow fadeInUp animated animated"
                 data-wow-delay="00ms"
                 data-wow-duration="1500ms"
               >
@@ -141,7 +141,7 @@ function Expriencedexperts() {
                       <h2>
                         <a href="index.html">Sebastian</a>
                       </h2>
-                      <span class="designation">- Director of Marketing</span>
+                      <span className="designation">- Director of Marketing</span>
                     </div>
                     <div className="lower-content">
                       <figure className="signature pull-left">
@@ -149,30 +149,30 @@ function Expriencedexperts() {
                       </figure>
                       <ul className="list pull-right">
                         <li className="share-option">
-                          <a href="index.html" class="share-icon">
-                            <i class="fas fa-share-alt"></i>
+                          <a href="index.html" className="share-icon">
+                            <i className="fas fa-share-alt"></i>
                           </a>
-                          <ul class="share-links clearfix">
+                          <ul className="share-links clearfix">
                             <li>
                               <a href="index-3.html">
-                                <i class="fab fa-linkedin-in"></i>
+                                <i className="fab fa-linkedin-in"></i>
                               </a>
                             </li>
                             <li>
                               <a href="index-3.html">
-                                <i class="fab fa-twitter"></i>
+                                <i className="fab fa-twitter"></i>
                               </a>
                             </li>
                             <li>
                               <a href="index-3.html">
-                                <i class="fab fa-facebook-f"></i>
+                                <i className="fab fa-facebook-f"></i>
                               </a>
                             </li>
                           </ul>
                         </li>
                         <li>
                           <a href="tel:123456789123">
-                            <i class="fas fa-phone"></i>
+                            <i className="fas fa-phone"></i>
                           </a>
                         </li>
                       </ul>

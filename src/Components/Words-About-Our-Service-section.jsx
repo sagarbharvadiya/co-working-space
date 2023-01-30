@@ -78,9 +78,9 @@ const Whataboutourservices = () => {
             </div>
             <div className="better-office-envirment-folder2">
               <a href="#">
-                <i class="fa-solid fa-arrow-right"></i>
+                <i className="fa-solid fa-arrow-right"></i>
               </a>
-              <a href="#" class="better-office-envirment-read-more">
+              <a href="#" className="better-office-envirment-read-more">
                 Read More
               </a>
             </div>
@@ -123,19 +123,19 @@ const Whataboutourservices = () => {
                                 )}</p>
                           <div className="words-about-our-services-stars">
                             <a>
-                              <i class="fa-solid fa-star"></i>
+                              <i className="fa-solid fa-star"></i>
                             </a>
                             <a>
-                              <i class="fa-solid fa-star"></i>
+                              <i className="fa-solid fa-star"></i>
                             </a>
                             <a>
-                              <i class="fa-solid fa-star"></i>
+                              <i className="fa-solid fa-star"></i>
                             </a>
                             <a>
-                              <i class="fa-solid fa-star"></i>
+                              <i className="fa-solid fa-star"></i>
                             </a>
                             <a>
-                              <i class="fa-solid fa-star"></i>
+                              <i className="fa-solid fa-star"></i>
                             </a>
                           </div>
                         </>

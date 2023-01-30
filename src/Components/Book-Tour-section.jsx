@@ -89,7 +89,7 @@ function Booktoursection() {
                     requied=""
                   />
                   <a href="#" className="input-icons">
-                    <i class="fa-solid fa-user"></i>
+                    <i className="fa-solid fa-user"></i>
                   </a>
                 </div>
                 <div className="input-folder">
@@ -103,7 +103,7 @@ function Booktoursection() {
                     requied=""
                   />
                   <a href="#" className="input-icons">
-                    <i class="fa-solid fa-envelope"></i>
+                    <i className="fa-solid fa-envelope"></i>
                   </a>
                 </div>
               </div>
@@ -119,7 +119,7 @@ function Booktoursection() {
               ></textarea>
               <div className="Book-tour-submit-btn-folder">
                 <button type="submit" className="submit-btn">
-                  <i class="fa-solid fa-arrow-right"></i>Submit Here
+                  <i className="fa-solid fa-arrow-right"></i>Submit Here
                 </button>
               </div>
               <ToastContainer

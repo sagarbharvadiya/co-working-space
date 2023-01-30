@@ -85,7 +85,7 @@ export default class Coworkingcitiessection extends Component {
                       <p>240 Spaces</p>
                       <div className="cowoking-tour-btn">
                         <a href="#">
-                          <i class="fa-solid fa-arrow-right"></i>
+                          <i className="fa-solid fa-arrow-right"></i>
                         </a>
                         <a href="#">Read More</a>
                       </div>
@@ -106,7 +106,7 @@ export default class Coworkingcitiessection extends Component {
                       <p>240 Spaces</p>
                       <div className="cowoking-tour-btn">
                         <a href="#">
-                          <i class="fa-solid fa-arrow-right"></i>
+                          <i className="fa-solid fa-arrow-right"></i>
                         </a>
                         <a href="#">Read More</a>
                       </div>
@@ -127,7 +127,7 @@ export default class Coworkingcitiessection extends Component {
                       <p>240 Spaces</p>
                       <div className="cowoking-tour-btn">
                         <a href="#">
-                          <i class="fa-solid fa-arrow-right"></i>
+                          <i className="fa-solid fa-arrow-right"></i>
                         </a>
                         <a href="#">Read More</a>
                       </div>
@@ -148,7 +148,7 @@ export default class Coworkingcitiessection extends Component {
                       <p>240 Spaces</p>
                       <div className="cowoking-tour-btn">
                         <a href="#">
-                          <i class="fa-solid fa-arrow-right"></i>
+                          <i className="fa-solid fa-arrow-right"></i>
                         </a>
                         <a href="#">Read More</a>
                       </div>
@@ -169,7 +169,7 @@ export default class Coworkingcitiessection extends Component {
                       <p>240 Spaces</p>
                       <div className="cowoking-tour-btn">
                         <a href="#">
-                          <i class="fa-solid fa-arrow-right"></i>
+                          <i className="fa-solid fa-arrow-right"></i>
                         </a>
                         <a href="#">Read More</a>
                       </div>
