@@ -1,0 +1,15 @@
+REACT_APP_BASE_URL = http://localhost/drupalreact
+
+# REACT_APP_WHAT_WE_OFFER_DRUPAL_URL = http://localhost/drupalreact/jsonapi/node/what_we_offer?include=field_image
+
+# REACT_APP_PASSION_INSPIRATION_URL = http://localhost/drupalreact/jsonapi/node/who_we_are?include=field_whoweareimage
+
+# REACT_APP_OFFICE_ENV_SPACES = http://localhost/drupalreact/jsonapi/node/featured_spaces?include=field_workspace_image
+
+# REACT_APP_PRICING_SECTION_URL = http://localhost/drupalreact/jsonapi/node/pricing_plans?include=field_icon
+
+# REACT_APP_OUR_GALLERY_URL = http://localhost/drupalreact/jsonapi/node/gallery?include=field_gallery_image
+
+# REACT_APP_TESTIMONIALS_URL = http://localhost/drupalreact/jsonapi/node/testimonials?include=field_reviewer_img
+
+# REACT_APP_BLOG_URL = http://localhost/drupalreact/jsonapi/node/blog?include=field_blog_image
