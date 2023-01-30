@@ -16,15 +16,10 @@ import Whataboutourservices from '../Components/Words-About-Our-Service-section'
 import Passioninspirationalsection from '../Components/Passion-Inspirational'
 
 const Home = () => {
-  const { REACT_APP_BASE_URL } = process.env;
+//   const { REACT_APP_BASE_URL } = process.env;
   return (
     <>
       <Homeslidersection />
-      <div className="env">
-        {
-        REACT_APP_BASE_URL
-        }
-      </div>
       <Spaceworkroomgrowsection />
       <Roompricesection />
       <Passioninspirationalsection />
