@@ -1,20 +1,13 @@
 import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
-import ourlogoimage1 from "../images/logo-image1.png";
-import ourlogoimage2 from "../images/logo-image2.png";
-import ourlogoimage3 from "../images/logo-image3.png";
-import ourlogoimage4 from "../images/logo-image4.png";
-import ourlogoimage5 from "../images/logo-image5.png";
-import ourlogoimage6 from "../images/logo-image1.png";
-import ourlogoimage7 from "../images/logo-image2.png";
-import ourlogoimage8 from "../images/logo-image3.png";
 
 const Ourgallerylogosection = () => {
   const [includes, setIncludes] = useState([]);
+  const { REACT_APP_BASE_URL } = process.env;
   useEffect(() => {
     async function loadPosts() {
       const response = await fetch(
-        "http://localhost/drupalreact/jsonapi/node/our_clients_logo_?include=field_logo"
+        `${REACT_APP_BASE_URL}/jsonapi/node/our_clients_logo_?include=field_logo`
       );
       if (!response.ok) {
         // oups! something went wrong

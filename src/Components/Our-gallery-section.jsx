@@ -3,10 +3,11 @@ import Masonry from 'react-masonry-css'
 
 function Ourgallerysection() {
   const [includes, setIncludes] = useState([]);
+  const { REACT_APP_BASE_URL } = process.env;
   useEffect(() => {
     async function loadPosts() {
       const response = await fetch(
-        "http://localhost/drupalreact/jsonapi/node/gallery?include=field_gallery_image"
+        `${REACT_APP_BASE_URL}/jsonapi/node/gallery?include=field_gallery_image`
       );
       if (!response.ok) {
         // oups! something went wrong

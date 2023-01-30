@@ -4,10 +4,11 @@ import Slider from "react-slick";
 function Officeenviroment() {
   const [posts, setPosts] = useState([]);
   const [includes, setIncludes] = useState([]);
+  const { REACT_APP_BASE_URL } = process.env;
   useEffect(() => {
     async function loadPosts() {
       const response = await fetch(
-        "http://localhost/drupalreact/jsonapi/node/featured_spaces?include=field_workspace_image"
+        `${REACT_APP_BASE_URL}/jsonapi/node/featured_spaces?include=field_workspace_image`
       );
       if (!response.ok) {
         // oups! something went wrong
@@ -92,8 +93,7 @@ function Officeenviroment() {
             </div>
           </div>
 
-          
-            {/* <div>
+          {/* <div>
               {posts.map((post, index) => (
                 <div>
                   {includes.map((include, index2) => {
@@ -114,7 +114,7 @@ function Officeenviroment() {
                 </div>
               ))}
               </div> */}
-            <div className="office-envirment-folder">
+          <div className="office-envirment-folder">
             <Slider {...settings}>
               {posts.map((post, index) => (
                 <div

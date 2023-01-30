@@ -4,10 +4,11 @@ import React, { useEffect, useState } from "react";
 function Spaceworkroomgrowsection() {
   const [posts, setPosts] = useState([]);
   const [includes, setIncludes] = useState([]);
+  const { REACT_APP_BASE_URL } = process.env
   useEffect(() => {
     async function loadPosts() {
       const response = await fetch(
-        "http://localhost/drupalreact/jsonapi/node/what_we_offer?include=field_image"
+         `${REACT_APP_BASE_URL}/jsonapi/node/what_we_offer?include=field_image`
       );
       if (!response.ok) {
         // oups! something went wrong
@@ -16,7 +17,6 @@ function Spaceworkroomgrowsection() {
       const jsonData = await response.json();
       const includes = jsonData.included;
       const posts = jsonData.data;
-      console.log(posts);
       setPosts(posts);
       setIncludes(includes);
     }

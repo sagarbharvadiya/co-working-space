@@ -3,10 +3,11 @@ import React, { useEffect, useState } from "react";
 function Explorelatestblogsection() {
   const [posts, setPosts] = useState([]);
   const [includes, setIncludes] = useState([]);
+  const { REACT_APP_BASE_URL } = process.env;
   useEffect(() => {
     async function loadPosts() {
       const response = await fetch(
-        "http://localhost/drupalreact/jsonapi/node/blog?include=field_blog_image"
+        `${REACT_APP_BASE_URL}/jsonapi/node/blog?include=field_blog_image`
       );
       if (!response.ok) {
         // oups! something went wrong

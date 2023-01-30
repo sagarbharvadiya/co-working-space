@@ -4,10 +4,11 @@ import Slider from "react-slick";
 const Whataboutourservices = () => {
   const [posts, setPosts] = useState([]);
   const [includes, setIncludes] = useState([]);
+  const { REACT_APP_BASE_URL } = process.env;
   useEffect(() => {
     async function loadPosts() {
       const response = await fetch(
-        "http://localhost/drupalreact/jsonapi/node/testimonials?include=field_reviewer_img"
+        `${REACT_APP_BASE_URL}/jsonapi/node/testimonials?include=field_reviewer_img`
       );
       if (!response.ok) {
         // oups! something went wrong

@@ -7,6 +7,7 @@ function Booktoursection() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const { REACT_APP_BASE_URL } = process.env;
 
   const notify = () => {
     toast.success("Your Request has been sent😊", {
@@ -26,11 +27,11 @@ function Booktoursection() {
     const Name = name;
     const Email = email;
     const Message = message;
-    axios.get("http://localhost/drupalreact//session/token").then((result) => {
+    axios.get(`${REACT_APP_BASE_URL}/session/token`).then((result) => {
       console.log(result);
       if (200 === result.status) {
         const csrfToken = result.data;
-        fetch("http://localhost/drupalreact/webform_rest/submit?_format=json", {
+        fetch(`${REACT_APP_BASE_URL}/webform_rest/submit?_format=json`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

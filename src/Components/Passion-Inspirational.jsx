@@ -3,10 +3,11 @@ import React, { useEffect, useState } from "react";
 function Passioninspirationalsection() {
   const [posts, setPosts] = useState([]);
   const [includes, setIncludes] = useState([]);
+  const { REACT_APP_BASE_URL } = process.env;
   useEffect(() => {
     async function loadPosts() {
       const response = await fetch(
-        "http://localhost/drupalreact/jsonapi/node/who_we_are?include=field_whoweareimage"
+        `${REACT_APP_BASE_URL}/jsonapi/node/who_we_are?include=field_whoweareimage`
       );
       if (!response.ok) {
         // oups! something went wrong
@@ -39,7 +40,7 @@ function Passioninspirationalsection() {
             <div className="passtion-inspirational-right-section">
               <div className="passtion-inspirational-text">WHO WE ARE</div>
               <h2>{post.attributes.field_whoweare_title.value}</h2>
-              <p>{post.attributes.field_whoweare_subtitle.value}</p>
+              <p>{post.attributes.field_whoweare_subtitle.value.replace(/<\/?[^>]+(>|$)/g,"")}</p>
               <div className="kodesk-diffrent-contenar">
                 <div className="Kodesk-difference">
                   <div className="Kodesk-difference-folder1">

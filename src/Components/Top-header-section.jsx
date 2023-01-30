@@ -1,5 +1,6 @@
 import React,{ useState } from "react";
 import logoimage from '../images/logo.png';
+import { NavLink } from "react-router-dom";
 
 function Topheadersection(){
     const[ modal, sertModal]=useState(false);
@@ -16,12 +17,12 @@ function Topheadersection(){
                         <img src={logoimage}/>
                     </div>
                     <div onClick={toggleModal} className="menu">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Location</a></li>
-                        <li><a href="#">Workspaces</a></li>
-                        <li><a href="#">News</a></li>
-                        <li><a href="#">Contact</a></li>
+                         <li><NavLink to="/">Home</NavLink></li>
+                        <li><NavLink to="About">About</NavLink></li>
+                        <li><NavLink to="/Location">Location</NavLink></li>
+                        <li><NavLink to="/Workspaces">Workspaces</NavLink></li>
+                        <li><NavLink to="/News">News</NavLink></li>
+                        <li><NavLink to="/Contact">Contact</NavLink></li>
                     </div>
                     <div className="serach-folder">
                         <a>Search</a>
@@ -41,12 +42,12 @@ function Topheadersection(){
                         <img src={logoimage}/>
                     </div>
                     <div onClick={toggleModal} className="menu-folder">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Location</a></li>
-                        <li><a href="#">Workspaces</a></li>
-                        <li><a href="#">News</a></li>
-                        <li><a href="#">Contact</a></li>
+                         <li><NavLink to="/">Home</NavLink></li>
+                        <li><NavLink to="About">About</NavLink></li>
+                        <li><NavLink to="/Location">Location</NavLink></li>
+                        <li><NavLink to="/Workspaces">Workspaces</NavLink></li>
+                        <li><NavLink to="/News">News</NavLink></li>
+                        <li><NavLink to="/Contact">Contact</NavLink></li>
                     </div>
                     <div className="serach-folder-contenar">
                         <a>Search</a>

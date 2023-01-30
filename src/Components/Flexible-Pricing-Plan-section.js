@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
-import Flexiblepricedata from "./Flexiblepricedata";
-import { Parser } from "html-to-react";
+
 
 function Flexiblepriceplansection() {
   const [posts, setPosts] = useState([]);
   const [includes, setIncludes] = useState([]);
+  const { REACT_APP_BASE_URL } = process.env;
   useEffect(() => {
     async function loadPosts() {
       const response = await fetch(
-        "http://localhost/drupalreact/jsonapi/node/pricing_plans?include=field_icon"
+        `${REACT_APP_BASE_URL}/jsonapi/node/pricing_plans?include=field_icon`
       );
       if (!response.ok) {
         // oups! something went wrong

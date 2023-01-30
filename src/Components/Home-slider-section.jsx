@@ -13,11 +13,11 @@ function Homeslidersection() {
   };
   const [posts, setPosts] = useState([]);
   const [includes, setIncludes] = useState([]);
+  const { REACT_APP_BASE_URL } = process.env
   useEffect(() => {
     async function loadPosts() {
       const response = await fetch(
-        // "http://localhost/drupalreact/jsonapi/node/banner?include=field_banner_image"
-        "http://localhost/drupalreact/jsonapi/node/demo_banner?include=field_slider_image"
+        `${REACT_APP_BASE_URL}/jsonapi/node/demo_banner?include=field_slider_image`
       );
       if (!response.ok) {
         // oups! something went wrong
