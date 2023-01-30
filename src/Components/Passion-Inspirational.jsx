@@ -26,6 +26,7 @@ function Passioninspirationalsection() {
     <>
       {posts.map((post, index) => (
         <div className="passtion-inspirational-section">
+         
           <div className="passtioninspriractionwrapper">
               <div className="passtion-inspirational-left-section">
               {includes.map((include, index2) => (

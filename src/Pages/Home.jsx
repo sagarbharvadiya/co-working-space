@@ -16,23 +16,29 @@ import Whataboutourservices from '../Components/Words-About-Our-Service-section'
 import Passioninspirationalsection from '../Components/Passion-Inspirational'
 
 const Home = () => {
+  const { REACT_APP_BASE_URL } = process.env;
   return (
     <>
-    <Homeslidersection/>
-    <Spaceworkroomgrowsection/>
-    <Roompricesection/>
-    <Passioninspirationalsection/>
-    <Coworkingcitiessection/>
-    <Officeenviroment/>
-    <Inforsection/>
-    <Flexiblepriceplansection/>
-    <Ourgallerysection/>
-    <Expriencedexperts/>
-    <Whataboutourservices/>
-    <Ourgallerylogosection/>
-    <Explorelatestblogsection/>
-    <Booktoursection/>
-    <UserCountersection/>
+      <Homeslidersection />
+      <div className="env">
+        {
+        REACT_APP_BASE_URL
+        }
+      </div>
+      <Spaceworkroomgrowsection />
+      <Roompricesection />
+      <Passioninspirationalsection />
+      <Coworkingcitiessection />
+      <Officeenviroment />
+      <Inforsection />
+      <Flexiblepriceplansection />
+      <Ourgallerysection />
+      <Expriencedexperts />
+      <Whataboutourservices />
+      <Ourgallerylogosection />
+      <Explorelatestblogsection />
+      <Booktoursection />
+      <UserCountersection />
 
     </>
   )
