@@ -32,8 +32,8 @@ function Passioninspirationalsection() {
               {includes.map((include, index2) => (
                 <div className="passtion-inspirational-left-folder1">
                   <div className="passtion-inspirational-left-image1">
-                    <img className="left-img" src= {`${REACT_APP_BASE_URL} + include.attributes.uri.url`}
-                    // {"http://localhost" + include.attributes.uri.url}
+                    <img className="left-img" src=
+                    {"https://divinehub.krushna53.com/" + include.attributes.uri.url}
                    alt="img" />
                          
                   </div>
