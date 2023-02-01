@@ -16,6 +16,7 @@ const Ourgallerydata=[
         title1:"On-Site Management",
         title2:"On-Site Management",
         Details:"Details",
+        
     },
 ]
 

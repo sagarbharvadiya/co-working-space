@@ -115,8 +115,13 @@ code {
   gap: 21px;
   align-items: center;
 }
-.serach-folder-contenar a {
+.serach-folder-contenar span {
   font-size: 18px;
+  color: #1e2c36;
+  cursor: pointer;
+}
+.search_modal input{
+  padding: 8px;
   color: #1e2c36;
 }
 .serach-icons {

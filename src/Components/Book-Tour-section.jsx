@@ -86,7 +86,7 @@ function Booktoursection() {
                     name="name"
                     onChange={(e) => setName(e.target.value)}
                     value={name}
-                    requied=""
+                    required=""
                   />
                   <a href="/" className="input-icons">
                     <i className="fa-solid fa-user"></i>
@@ -100,7 +100,7 @@ function Booktoursection() {
                     name="email"
                     onChange={(e) => setEmail(e.target.value)}
                     value={email}
-                    requied=""
+                    required=""
                   />
                   <a href="/" className="input-icons">
                     <i className="fa-solid fa-envelope"></i>
