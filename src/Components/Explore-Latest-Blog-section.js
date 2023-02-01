@@ -36,7 +36,7 @@ function Explorelatestblogsection() {
                     return(
                     <div>
                       <img
-                        src={"http://localhost" + include.attributes.uri.url}
+                        src={"https://divinehub.krushna53.com" + include.attributes.uri.url}
                       />
                       <div>
                         <h2>{post.attributes.field_blog_title.value}</h2>
@@ -49,7 +49,7 @@ function Explorelatestblogsection() {
                     return (
                       <div className="explore-latest-blog-image">
                         <img
-                          src={"http://localhost" + include.attributes.uri.url}
+                          src={"https://divinehub.krushna53.com" + include.attributes.uri.url}
                         />
                         <div className="explore-latest-title">
                           <div className="explore-latest-folder1">

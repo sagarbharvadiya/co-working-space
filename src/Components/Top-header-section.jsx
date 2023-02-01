@@ -26,11 +26,11 @@ function Topheadersection(){
                     </div>
                     <div className="serach-folder">
                         <a>Search</a>
-                        <a href="#" className="serach-icon"><i className="fa-solid fa-magnifying-glass"></i></a>
+                        <a href="/" className="serach-icon"><i className="fa-solid fa-magnifying-glass"></i></a>
                     </div>
                     <div className="serach-input">
                         <input type="Search" className="inner-input" placeholder="Search..."/>
-                        <a href="#" className="serach-icon-btn"><i className="fa-solid fa-magnifying-glass"></i></a>
+                        <a href="/" className="serach-icon-btn"><i className="fa-solid fa-magnifying-glass"></i></a>
                     </div>
                 </div>
             </div>
@@ -39,7 +39,7 @@ function Topheadersection(){
                 <div className="Topheaderwrapperfolder">
                     <h2 className="menu-title-folder">Menu</h2>
                     <div className="logo-folder">
-                        <img src={logoimage}/>
+                        <img src={logoimage} alt="logo"/>
                     </div>
                     <div onClick={toggleModal} className="menu-folder">
                          <li><NavLink to="/">Home</NavLink></li>
@@ -51,11 +51,11 @@ function Topheadersection(){
                     </div>
                     <div className="serach-folder-contenar">
                         <a>Search</a>
-                        <a href="#" className="serach-icons"><i className="fa-solid fa-magnifying-glass"></i></a>
+                        <a href="/" className="serach-icons"><i className="fa-solid fa-magnifying-glass"></i></a>
                     </div>
                     <div className="serach-input-folder">
                         <input type="Search" className="inner-input-folder" placeholder="Search..."/>
-                        <a href="#" className="serach-icon-btn-folder"><i className="fa-solid fa-magnifying-glass"></i></a>
+                        <a href="/" className="serach-icon-btn-folder"><i className="fa-solid fa-magnifying-glass"></i></a>
                     </div>
                 </div>
             </div>

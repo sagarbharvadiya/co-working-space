@@ -40,7 +40,7 @@ function Ourgallerysection() {
           >
           {includes.map((include, index2) => (
             <div className="gallery-image-section">
-             <img className="gallery-img" src={"http://localhost" + include.attributes.uri.url}  alt="image"/>
+             <img className="gallery-img" src={"https://divinehub.krushna53.com" + include.attributes.uri.url}  alt="image"/>
             </div>
           ))}
           </Masonry>
@@ -57,7 +57,7 @@ function Ourgallerysection() {
 {/* <Masonry columnsCount={4} gutter="10px">
           {includes.map((include, index2) => (
             <div className="gallery-image-section">
-              <img className="gallery-img" src={"http://localhost" + include.attributes.uri.url}  alt="image"/>
+              <img className="gallery-img" src={"https://divinehub.krushna53.com" + include.attributes.uri.url}  alt="image"/>
             </div>
           ))}
 </Masonry> */}

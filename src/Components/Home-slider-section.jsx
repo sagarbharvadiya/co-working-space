@@ -46,7 +46,7 @@ function Homeslidersection() {
                     <>
                     <div className="home-slider-image">
                       <img
-                        src={"http://localhost" + include.attributes.uri.url}
+                        src={"https://divinehub.krushna53.com" + include.attributes.uri.url}
                       />
                       <h5>{include.attributes.uri.url}</h5>
                       <h2>{index2}</h2>
@@ -75,7 +75,7 @@ function Homeslidersection() {
                           <div className="home-slider-image">
                             <img
                               src={
-                                "http://localhost" + include.attributes.uri.url
+                                "https://divinehub.krushna53.com" + include.attributes.uri.url
                               }
                             />
                           </div>

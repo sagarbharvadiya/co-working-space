@@ -77,10 +77,10 @@ const Whataboutourservices = () => {
               <h2>Words About Our Service</h2>
             </div>
             <div className="better-office-envirment-folder2">
-              <a href="#">
+              <a href="/">
                 <i className="fa-solid fa-arrow-right"></i>
               </a>
-              <a href="#" className="better-office-envirment-read-more">
+              <a href="/" className="better-office-envirment-read-more">
                 Read More
               </a>
             </div>
@@ -99,10 +99,10 @@ const Whataboutourservices = () => {
                               <div className="words-about-our-services-image">
                                 <img
                                   src={
-                                    "http://localhost" +
+                                    "https://divinehub.krushna53.com" +
                                     include.attributes.uri.url
                                   }
-                                />
+                             alt="img"   />
                               </div>
                               <div className="words-about-our-services-title">
                                 <h2>
@@ -122,19 +122,19 @@ const Whataboutourservices = () => {
                                   ""
                                 )}</p>
                           <div className="words-about-our-services-stars">
-                            <a>
+                            <a href="/">
                               <i className="fa-solid fa-star"></i>
                             </a>
-                            <a>
+                            <a href="/">
                               <i className="fa-solid fa-star"></i>
                             </a>
-                            <a>
+                            <a href="/">
                               <i className="fa-solid fa-star"></i>
                             </a>
-                            <a>
+                            <a href="/">
                               <i className="fa-solid fa-star"></i>
                             </a>
-                            <a>
+                            <a href="/">
                               <i className="fa-solid fa-star"></i>
                             </a>
                           </div>

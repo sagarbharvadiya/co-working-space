@@ -11,7 +11,7 @@ function Inforsection(){
     useEffect(() => {
       async function loadPosts() {
         const response = await fetch(
-          "http://localhost/reactwordpress/wp-json/wp/v2/features"
+          "https://divinehub.krushna53.com/reactwordpress/wp-json/wp/v2/features"
         );
         if (!response.ok) {
           // oups! something went wrong

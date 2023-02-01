@@ -100,7 +100,7 @@ function Officeenviroment() {
                     if(index === index2) {
                       return(
                         <div>
-                          <img src={"http://localhost" + include.attributes.uri.url}/>
+                          <img src={"https://divinehub.krushna53.com" + include.attributes.uri.url}/>
                           <span>{post.attributes.field_workspace_type.value}</span>
                           <span>{post.attributes.field_workspace_address.value}</span>
                           <h2>{post.attributes.field_workspace_name.value}</h2>
@@ -127,7 +127,7 @@ function Officeenviroment() {
                         <div className="office-envirment-image">
                           <img
                             src={
-                              "http://localhost" + include.attributes.uri.url
+                              "https://divinehub.krushna53.com" + include.attributes.uri.url
                             }
                           />
                           <div className="office-envirment-des-folder">

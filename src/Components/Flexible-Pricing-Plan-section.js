@@ -41,7 +41,7 @@ function Flexiblepriceplansection() {
                           <div className="flexible-price-image-folder">
                             <img
                               src={
-                                "http://localhost" + include.attributes.uri.url
+                                "https://divinehub.krushna53.com" + include.attributes.uri.url
                               }
                             />
                           </div>

@@ -11,16 +11,16 @@ function Roompricesection(){
                             Roompricedata.map((val) => {
                                 return <div className="room-price-blog-box-section">
                                             <div className="room-price-image">
-                                                <img src={val.image}/>
+                                                <img src={val.image} alt="img"/>
                                             </div>
                                             <div className="room-price-place-folder">
                                                 <span>{val.userplace}</span>
                                                 <h2>{val.title}</h2>
                                                 <div className="user-enter">
-                                                    <a href="#" className="user-icon"><i className="fa-solid fa-user"></i></a>
+                                                    <a href="/" className="user-icon"><i className="fa-solid fa-user"></i></a>
                                                     <p>{val.usercount}</p>
                                                 </div>
-                                                <a href="#" className="room-price-btn">{val.readmore}</a>
+                                                <a href="/" className="room-price-btn">{val.readmore}</a>
                                             </div>
                                         </div>
                             })
