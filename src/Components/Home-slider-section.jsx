@@ -73,11 +73,7 @@ function Homeslidersection() {
                       return (
                         <>
                           <div className="home-slider-image">
-                            <img
-                              src={
-                                "https://divinehub.krushna53.com" + include.attributes.uri.url
-                              }
-                            />
+                            <img src={REACT_APP_BASE_URL + include.attributes.uri.url} alt="img" />
                           </div>
                           <div className="home-slider-text-folder1">
                             <h2>{post.attributes.field_slider_title.value}</h2>
