@@ -14,7 +14,7 @@ function UserCountersection(){
                                             <h2>{val.menbers}</h2>
                                             <p>{val.des}</p>
                                             <div className="user-count-image">
-                                                <img src={val.image}/>
+                                                <img src={val.image} alt={val.image}/>
                                             </div>
                                         </div>
                             })

@@ -74,20 +74,20 @@ export default class Coworkingcitiessection extends Component {
               <Slider {...settings}>
                 <div className="coworking-cities-blog-box-section">
                   <div className="coworking-cites-image">
-                    <img src={coworkingcityimage} />
+                    <img src={coworkingcityimage} alt={coworkingcityimage} />
                   </div>
                   <div className="coworking-cities-info-folder">
                     <div className="cowoking-cities-info">
                       <div className="cowoking-cities-logo">
-                        <img src={citieslogo} />
+                        <img src={citieslogo} alt={citieslogo}/>
                       </div>
                       <span>KoDesk Newyork</span>
                       <p>240 Spaces</p>
                       <div className="cowoking-tour-btn">
-                        <a href="#">
+                        <a href="/">
                           <i className="fa-solid fa-arrow-right"></i>
                         </a>
-                        <a href="#">Read More</a>
+                        <a href="/">Read More</a>
                       </div>
                     </div>
                   </div>
@@ -95,20 +95,20 @@ export default class Coworkingcitiessection extends Component {
                 </div>
                 <div className="coworking-cities-blog-box-section">
                   <div className="coworking-cites-image">
-                    <img src={coworkingcityimage} />
+                    <img src={coworkingcityimage} alt={coworkingcityimage} />
                   </div>
                   <div className="coworking-cities-info-folder">
                     <div className="cowoking-cities-info">
                       <div className="cowoking-cities-logo">
-                        <img src={citieslogo} />
+                        <img src={citieslogo} alt={citieslogo}/>
                       </div>
                       <span>KoDesk Newyork</span>
                       <p>240 Spaces</p>
                       <div className="cowoking-tour-btn">
-                        <a href="#">
+                        <a href="/">
                           <i className="fa-solid fa-arrow-right"></i>
                         </a>
-                        <a href="#">Read More</a>
+                        <a href="/">Read More</a>
                       </div>
                     </div>
                   </div>
@@ -116,20 +116,20 @@ export default class Coworkingcitiessection extends Component {
                 </div>
                 <div className="coworking-cities-blog-box-section">
                   <div className="coworking-cites-image">
-                    <img src={coworkingcityimage} />
+                    <img src={coworkingcityimage} alt={coworkingcityimage} />
                   </div>
                   <div className="coworking-cities-info-folder">
                     <div className="cowoking-cities-info">
                       <div className="cowoking-cities-logo">
-                        <img src={citieslogo} />
+                        <img src={citieslogo} alt={citieslogo} />
                       </div>
                       <span>KoDesk Newyork</span>
                       <p>240 Spaces</p>
                       <div className="cowoking-tour-btn">
-                        <a href="#">
+                        <a href="/">
                           <i className="fa-solid fa-arrow-right"></i>
                         </a>
-                        <a href="#">Read More</a>
+                        <a href="/">Read More</a>
                       </div>
                     </div>
                   </div>
@@ -137,20 +137,20 @@ export default class Coworkingcitiessection extends Component {
                 </div>
                 <div className="coworking-cities-blog-box-section">
                   <div className="coworking-cites-image">
-                    <img src={coworkingcityimage} />
+                    <img src={coworkingcityimage} alt={coworkingcityimage} />
                   </div>
                   <div className="coworking-cities-info-folder">
                     <div className="cowoking-cities-info">
                       <div className="cowoking-cities-logo">
-                        <img src={citieslogo} />
+                        <img src={citieslogo} alt={citieslogo} />
                       </div>
                       <span>KoDesk Newyork</span>
                       <p>240 Spaces</p>
                       <div className="cowoking-tour-btn">
-                        <a href="#">
+                        <a href="/">
                           <i className="fa-solid fa-arrow-right"></i>
                         </a>
-                        <a href="#">Read More</a>
+                        <a href="/">Read More</a>
                       </div>
                     </div>
                   </div>
@@ -158,20 +158,20 @@ export default class Coworkingcitiessection extends Component {
                 </div>
                 <div className="coworking-cities-blog-box-section">
                   <div className="coworking-cites-image">
-                    <img src={coworkingcityimage} />
+                    <img src={coworkingcityimage} alt={coworkingcityimage}/>
                   </div>
                   <div className="coworking-cities-info-folder">
                     <div className="cowoking-cities-info">
                       <div className="cowoking-cities-logo">
-                        <img src={citieslogo} />
+                        <img src={citieslogo} alt={citieslogo}/>
                       </div>
                       <span>KoDesk Newyork</span>
                       <p>240 Spaces</p>
                       <div className="cowoking-tour-btn">
-                        <a href="#">
+                        <a href="/">
                           <i className="fa-solid fa-arrow-right"></i>
                         </a>
-                        <a href="#">Read More</a>
+                        <a href="/">Read More</a>
                       </div>
                     </div>
                   </div>

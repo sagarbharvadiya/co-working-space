@@ -84,10 +84,10 @@ function Officeenviroment() {
               <h2>Better Office Environment</h2>
             </div>
             <div className="better-office-envirment-folder2">
-              <a href="#">
+              <a href="/">
                 <i className="fa-solid fa-arrow-right"></i>
               </a>
-              <a href="#" className="better-office-envirment-read-more">
+              <a href="/" className="better-office-envirment-read-more">
                 Read More
               </a>
             </div>
@@ -127,9 +127,9 @@ function Officeenviroment() {
                         <div className="office-envirment-image">
                           <img
                             src={
-                              "https://divinehub.krushna53.com" + include.attributes.uri.url
+                              REACT_APP_BASE_URL + include.attributes.uri.url
                             }
-                          />
+                         alt="" />
                           <div className="office-envirment-des-folder">
                             <span className="office-envirment-des-folder-title">
                               {post.attributes.field_workspace_type.value}

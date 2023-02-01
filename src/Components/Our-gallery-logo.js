@@ -63,7 +63,7 @@ const Ourgallerylogosection = () => {
             {includes.map((include, index2) => (
               <div className="our-gallery-logo-blog-box-section">
                 <div className="our-gallery-logo-image">
-                  <img src={"https://divinehub.krushna53.com" + include.attributes.uri.url} />
+                  <img src={REACT_APP_BASE_URL + include.attributes.uri.url} alt=""/>
                 </div>
               </div>
             ))}

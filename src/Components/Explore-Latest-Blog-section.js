@@ -49,17 +49,17 @@ function Explorelatestblogsection() {
                     return (
                       <div className="explore-latest-blog-image">
                         <img
-                          src={"https://divinehub.krushna53.com" + include.attributes.uri.url}
-                        />
+                          src={REACT_APP_BASE_URL + include.attributes.uri.url}
+                        alt={Image}/>
                         <div className="explore-latest-title">
                           <div className="explore-latest-folder1">
                             <div className="explore-latest-user">
                               <div className="user-image">
-                                <img src="" />
+                                <img src="" alt="" />
                               </div>
                               <span>By: Admin</span>
                             </div>
-                            <a href="#">
+                            <a href="/">
                               <i className="fas fa-share-alt"></i>
                             </a>
                           </div>
@@ -75,10 +75,10 @@ function Explorelatestblogsection() {
                               {post.attributes.field_blog_date}
                             </p>
                             <div className="explore-latest-btn">
-                              <a href="#">
+                              <a href="/">
                                 <i className="fa-solid fa-arrow-right"></i>
                               </a>
-                              <a href="#" className="explore-latest-read-more">
+                              <a href="/" className="explore-latest-read-more">
                                 Read More
                               </a>
                             </div>

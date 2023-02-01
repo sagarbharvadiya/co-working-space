@@ -41,8 +41,8 @@ function Flexiblepriceplansection() {
                           <div className="flexible-price-image-folder">
                             <img
                               src={
-                                "https://divinehub.krushna53.com" + include.attributes.uri.url
-                              }
+                                REACT_APP_BASE_URL + include.attributes.uri.url
+                              } alt="img"
                             />
                           </div>
                           <span>${post.attributes.field_price}</span>
@@ -67,10 +67,10 @@ function Flexiblepriceplansection() {
                           </div>
                         </div>
                         <div className="flexible-price-btn">
-                          <a href="#">
+                          <a href="/">
                             <i className="fa-solid fa-arrow-right"></i>
                           </a>
-                          <a href="#" className="Choose-Plan">
+                          <a href="/" className="Choose-Plan">
                             Choose a Plan
                           </a>
                         </div>

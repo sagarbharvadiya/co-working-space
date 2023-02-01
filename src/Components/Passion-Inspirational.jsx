@@ -33,7 +33,7 @@ function Passioninspirationalsection() {
                 <div className="passtion-inspirational-left-folder1">
                   <div className="passtion-inspirational-left-image1">
                     <img className="left-img" src=
-                    {"https://divinehub.krushna53.com/" + include.attributes.uri.url}
+                    {REACT_APP_BASE_URL + include.attributes.uri.url}
                    alt="img" />
                          
                   </div>

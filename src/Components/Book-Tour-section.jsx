@@ -88,7 +88,7 @@ function Booktoursection() {
                     value={name}
                     requied=""
                   />
-                  <a href="#" className="input-icons">
+                  <a href="/" className="input-icons">
                     <i className="fa-solid fa-user"></i>
                   </a>
                 </div>
@@ -102,7 +102,7 @@ function Booktoursection() {
                     value={email}
                     requied=""
                   />
-                  <a href="#" className="input-icons">
+                  <a href="/" className="input-icons">
                     <i className="fa-solid fa-envelope"></i>
                   </a>
                 </div>

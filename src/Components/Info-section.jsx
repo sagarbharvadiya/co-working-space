@@ -8,9 +8,11 @@ import infoimage6 from '../images/infor-image6.png';
 
 function Inforsection(){
     const [posts, setPosts] = useState([]);
+    // const { REACT_APP_BASE_URL } = process.env;
     useEffect(() => {
       async function loadPosts() {
         const response = await fetch(
+            // `${REACT_APP_BASE_URL}/jsonapi/node/pricing_plans?include=field_icon`
           "https://divinehub.krushna53.com/reactwordpress/wp-json/wp/v2/features"
         );
         if (!response.ok) {

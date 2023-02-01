@@ -39,7 +39,7 @@ function Spaceworkroomgrowsection() {
                     return (
                       <>
                         <div className="space-work-image">
-                          <img src={"https://divinehub.krushna53.com/" + include.attributes.uri.url} alt="banner" />
+                          <img src={REACT_APP_BASE_URL + include.attributes.uri.url} alt="banner" />
                         </div>
                         <span>WE OFFER</span>
                         <h2>{post.attributes.field_what_we_offer_title.value}</h2>

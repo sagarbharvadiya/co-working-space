@@ -99,8 +99,7 @@ const Whataboutourservices = () => {
                               <div className="words-about-our-services-image">
                                 <img
                                   src={
-                                    "https://divinehub.krushna53.com" +
-                                    include.attributes.uri.url
+                                    REACT_APP_BASE_URL + include.attributes.uri.url
                                   }
                              alt="img"   />
                               </div>
