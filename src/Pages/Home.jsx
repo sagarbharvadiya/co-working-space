@@ -8,7 +8,8 @@ import Homeslidersection from '../Components/Home-slider-section'
 import Inforsection from '../Components/Info-section'
 import Officeenviroment from '../Components/Office-Environment'
 import Ourgallerylogosection from '../Components/Our-gallery-logo'
-import Ourgallerysection from '../Components/Our-gallery-section'
+// import Ourgallerysection from '../Components/Our-gallery-section'
+import Gallery from '../Components/gallery'
 import Roompricesection from '../Components/Room-price-section'
 import Spaceworkroomgrowsection from '../Components/Space-Work-Room-to-grow-section'
 import UserCountersection from '../Components/User-counter-section'
@@ -16,15 +17,10 @@ import Whataboutourservices from '../Components/Words-About-Our-Service-section'
 import Passioninspirationalsection from '../Components/Passion-Inspirational'
 
 const Home = () => {
-  const { REACT_APP_BASE_URL } = process.env;
+  // const { REACT_APP_BASE_URL } = process.env;
   return (
     <>
       <Homeslidersection />
-      <div className="env">
-        {
-        REACT_APP_BASE_URL
-        }
-      </div>
       <Spaceworkroomgrowsection />
       <Roompricesection />
       <Passioninspirationalsection />
@@ -32,14 +28,14 @@ const Home = () => {
       <Officeenviroment />
       <Inforsection />
       <Flexiblepriceplansection />
-      <Ourgallerysection />
+      {/* <Ourgallerysection /> */}
+      <Gallery />
       <Expriencedexperts />
       <Whataboutourservices />
       <Ourgallerylogosection />
       <Explorelatestblogsection />
       <Booktoursection />
       <UserCountersection />
-
     </>
   )
 }

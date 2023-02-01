@@ -815,7 +815,11 @@ code {
   background-color: #24323d;
   border: 1px solid #34434e;
 }
-/* .our-gallery-folder1{
+
+/*  */
+   /*  */
+     /*  */
+.our-gallery-folder1{
   display: flex;
   gap: 20px;
 }
@@ -915,7 +919,10 @@ code {
 }
 .our-agllery-section{
   margin-top: 150px;
-} */
+}
+/*  */
+   /*  */
+      /*  */
 .gallery-container {
   display: flex;
   flex-direction: column;
