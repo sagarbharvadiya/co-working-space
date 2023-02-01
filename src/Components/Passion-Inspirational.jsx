@@ -21,7 +21,7 @@ function Passioninspirationalsection() {
       setIncludes(includes);
     }
     loadPosts();
-  }, []);
+  },);
   return (
     <>
       {posts.map((post, index) => (
@@ -32,8 +32,10 @@ function Passioninspirationalsection() {
               {includes.map((include, index2) => (
                 <div className="passtion-inspirational-left-folder1">
                   <div className="passtion-inspirational-left-image1">
-                    <img className="left-img" src={"http://localhost" + include.attributes.uri.url}
-                    />
+                    <img className="left-img" src= {`${REACT_APP_BASE_URL} + include.attributes.uri.url`}
+                    // {"http://localhost" + include.attributes.uri.url}
+                   alt="img" />
+                         
                   </div>
                 </div>
               ))}
@@ -49,10 +51,10 @@ function Passioninspirationalsection() {
                     <h2>Kodesk-difference</h2>
                   </div>
                   <div className="Kodesk-difference-folder1">
-                    <a href="#">
+                    <a href="/">
                       <i className="fa-solid fa-arrow-right"></i>
                     </a>
-                    <a href="#" className="Kodesk-difference-read-more">
+                    <a href="/" className="Kodesk-difference-read-more">
                       Read More
                     </a>
                   </div>
@@ -63,10 +65,10 @@ function Passioninspirationalsection() {
                     <h2>Kodesk-difference</h2>
                   </div>
                   <div className="Kodesk-difference-folder1">
-                    <a href="#">
+                    <a href="/">
                       <i className="fa-solid fa-arrow-right"></i>
                     </a>
-                    <a href="#" className="Kodesk-difference-read-more">
+                    <a href="/" className="Kodesk-difference-read-more">
                       Read More
                     </a>
                   </div>
