@@ -7,7 +7,7 @@ function Homeslidersection() {
     arrows: false,
     infinite: true,
     speed: 500,
-    autoplay: false,
+    autoplay: true,
     slidesToShow: 1,
     slidesToScroll: 1,
   };
