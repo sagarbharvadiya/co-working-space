@@ -5,7 +5,7 @@ function Spaceworkroomgrowsection() {
   const [posts, setPosts] = useState([]);
   const [includes, setIncludes] = useState([]);
   const { REACT_APP_BASE_URL } = process.env
-  // const { REACT_APP_WHAT_WE_OFFER_DRUPAL_URL } = process.env 
+  const { REACT_APP_BASE_WHAT_WE_OFFER_IMG } = process.env 
   useEffect(() => {
     async function loadPosts() {
       const response = await fetch(
@@ -39,8 +39,8 @@ function Spaceworkroomgrowsection() {
                     return (
                       <>
                         <div className="space-work-image">
-                          <img src={"https://divinehub.krushna53.com/" + include.attributes.uri.url} alt="banner" />
-                          {/* <img src={REACT_APP_WHAT_WE_OFFER_DRUPAL_URL} alt="banner" /> */}
+                          {/* <img src={"https://divinehub.krushna53.com/" + include.attributes.uri.url} alt="banner" /> */}
+                          <img src={REACT_APP_BASE_WHAT_WE_OFFER_IMG} alt="banner" />
                         </div>
                         <span>WE OFFER</span>
                         <h2>{post.attributes.field_what_we_offer_title.value}</h2>
