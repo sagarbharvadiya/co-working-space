@@ -17,7 +17,7 @@ import Whataboutourservices from '../Components/Words-About-Our-Service-section'
 import Passioninspirationalsection from '../Components/Passion-Inspirational'
 
 const Home = () => {
-  // const { REACT_APP_BASE_URL } = process.env;
+
   return (
     <>
       <Homeslidersection />
