@@ -29,7 +29,7 @@ function Flexiblepriceplansection() {
     arrows: false,
     infinite: true,
     speed: 500,
-    autoplay: false,
+    autoplay: true,
     slidesToShow: 3,
     slidesToScroll: 1,
   };
