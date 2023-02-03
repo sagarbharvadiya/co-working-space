@@ -25,8 +25,8 @@ const Ourgallerylogosection = () => {
     infinite: true,
     speed: 500,
     autoplay: true,
-    slidesToShow: 5,
-    slidesToScroll: 5,
+    slidesToShow: 4,
+    slidesToScroll: 4,
     responsive: [
       {
         breakpoint: 1024,
@@ -56,20 +56,17 @@ const Ourgallerylogosection = () => {
   };
   return (
     <>
-      <div className="Our-gallery-logo-section">
-        <div className="ourgallerylogowrapper">
-          <div className="our-gallery-logo-folder">
-            <Slider {...settings}>
-            {includes.map((include, index2) => (
-              <div className="our-gallery-logo-blog-box-section">
-                <div className="our-gallery-logo-image">
-                  <img src={REACT_APP_BASE_URL + include.attributes.uri.url} alt=""/>
-                </div>
+
+      <div className="brand_logos">
+        <Slider {...settings}>
+          {includes.map((include, index2) => (
+            <div className="">
+              <div className="our-gallery-logo-image">
+                <img src={REACT_APP_BASE_URL + include.attributes.uri.url} alt="" />
               </div>
-            ))}
-            </Slider>
-          </div>
-        </div>
+            </div>
+          ))}
+        </Slider>
       </div>
     </>
   );

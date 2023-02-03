@@ -1,86 +1,45 @@
-import React, { useEffect, useState }  from "react";
-import infoimage1 from '../images/infor-image1.png';
-import infoimage2 from '../images/infor-image2.png';
-import infoimage3 from '../images/infor-image3.png';
-import infoimage4 from '../images/infor-image4.png';
-import infoimage5 from '../images/infor-image5.png';
-import infoimage6 from '../images/infor-image6.png';
+import React, { useEffect, useState } from "react";
+import dataJson from "../json_data/Amenities.js";
 
-function Inforsection(){
+
+function Inforsection() {
     const [posts, setPosts] = useState([]);
     // const { REACT_APP_BASE_URL } = process.env;
     useEffect(() => {
-      async function loadPosts() {
-        const response = await fetch(
-            // `${REACT_APP_BASE_URL}/jsonapi/node/pricing_plans?include=field_icon`
-          "https://divinehub.krushna53.com/reactwordpress/wp-json/wp/v2/features"
-        );
-        if (!response.ok) {
-          // oups! something went wrong
-          return;
+        async function loadPosts() {
+            const response = await fetch(
+                // `${REACT_APP_BASE_URL}/jsonapi/node/pricing_plans?include=field_icon`
+
+            );
+            if (!response.ok) {
+                // oups! something went wrong
+                return;
+            }
+            const posts = await response.json();
+            setPosts(posts);
         }
-        const posts = await response.json();
-        setPosts(posts);
-      }
-      loadPosts();
+        loadPosts();
     }, []);
-    return(
+    return (
         <>
             <div className="info-section">
                 <div className="infowrapper">
                     <div className="info-folder">
-                        <div className="info-blog-box-section">
-                            <div className="info-image">
-                                <img src={infoimage1}/>
-                            </div>
-                            <h2>Fast Internet</h2>
-                            <p>Extremely painful or again love pursue desire.</p>
-                        </div>
-                        <div className="info-blog-box-section">
-                            <div className="info-image">
-                                <img src={infoimage2}/>
-                            </div>
-                            <h2>Ups Backup</h2>
-                            <p>The same as saying throgh shrinking from toil.</p>
-                        </div>
-                        <div className="info-blog-box-section">
-                            <div className="info-image">
-                                <img src={infoimage3}/>
-                            </div>
-                            <h2>Tea/Coffee</h2>
-                            <p>Extremely painful or again love pursue desire.</p>
-                        </div>
-                        <div className="info-blog-box-section">
-                            <div className="info-image">
-                                <img src={infoimage4}/>
-                            </div>
-                            <h2>House Keeping</h2>
-                            <p>The same as saying throgh shrinking from toil.</p>
-                        </div>
-                        <div className="info-blog-box-section">
-                            <div className="info-image">
-                                <img src={infoimage5}/>
-                            </div>
-                            <h2>Air Conditioner</h2>
-                            <p>We like best every pleasure to be welcomed.</p>
-                        </div>
-                        <div className="info-blog-box-section">
-                            <div className="info-circle-contenar">
-                                <span>40</span>
-                                <h2>High Range Of Amenities</h2>
-                            </div> 
-                        </div>  
-                        <div className="info-blog-box-section">
-                            <a href="#"><i className="fa-solid fa-arrow-right"></i></a>
-                            <p>View All Amenities</p>
-                        </div>
-                        <div className="info-blog-box-section">
-                            <div className="info-image">
-                                <img src={infoimage6}/>
-                            </div>
-                            <h2>Scanner & Printer</h2>
-                            <p>We like best every pleasure to be welcomed.</p>
-                        </div>
+                        {
+                            dataJson.map((d, i) => (
+                                <>
+                                    <div className="info-blog-box-section">
+                                        <div className="info-image">
+                                            <img src={d.image} alt={d.image} />
+                                        </div>
+                                        <h4>{d.details}</h4>
+                                        {/* <p>Extremely painful or again love pursue desire.</p> */}
+                                    </div>
+                                   
+                                </>
+                            ))}
+
+
                     </div>
                 </div>
             </div>

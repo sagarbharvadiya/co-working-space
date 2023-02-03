@@ -1,5 +1,5 @@
 import React from "react";
-import Roompricedata from "./Roompricedata";
+import Roompricedata from "../json_data/Roompricedata";
 
 function Roompricesection(){
     return(

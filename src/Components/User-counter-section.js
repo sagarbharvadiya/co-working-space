@@ -1,5 +1,5 @@
 import React from "react";
-import Usercounterdata from "./Usercounterdata";
+import Usercounterdata from "../json_data/Usercounterdata";
 
 function UserCountersection(){
     return(

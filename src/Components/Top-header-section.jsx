@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logoimage from '../images/logo.png';
+import logoimage from '../images/DH-Logo.png';
 import { NavLink } from "react-router-dom";
 
 function Topheadersection() {
@@ -14,9 +14,9 @@ function Topheadersection() {
             {modal && (
                 <div className="Top-Header-section">
                     <div className="Topheaderwrapper">
-                        <h2 className="menu-title">Menu</h2>
+                        {/* <h2 className="menu-title">Menu</h2> */}
                         <div className="logo">
-                            <img src={logoimage} />
+                        <NavLink to="/"><img src={logoimage} alt="logo"/></NavLink>  
                         </div>
                         <div onClick={toggleModal} className="menu">
                             <li><NavLink to="/">Home</NavLink></li>
@@ -39,9 +39,9 @@ function Topheadersection() {
             )}
             <div className="Top-Header-section-folder">
                 <div className="Topheaderwrapperfolder">
-                    <h2 className="menu-title-folder">Menu</h2>
+                    {/* <h2 className="menu-title-folder">Menu</h2> */}
                     <div className="logo-folder">
-                        <img src={logoimage} alt="logo" />
+                    <NavLink to="/"><img src={logoimage} alt="logo"/></NavLink> 
                     </div>
                     <div onClick={toggleModal} className="menu-folder">
                         <li><NavLink to="/">Home</NavLink></li>
@@ -51,7 +51,7 @@ function Topheadersection() {
                         <li><NavLink to="/Blog">Blog</NavLink></li>
                         <li><NavLink to="/Contact">Contact</NavLink></li>
                     </div>
-                    <div className="serach-folder-contenar">
+                    {/* <div className="serach-folder-contenar">
                         <span>Search</span>
                         <span onClick={() => setsearch_modal(!search_modal)} className="serach-icons"><i className="fa-solid fa-magnifying-glass"></i></span>
                         {search_modal &&
@@ -59,6 +59,14 @@ function Topheadersection() {
                                 <input type="search" placeholder="search" />
                             </div>
                         }
+                    </div> */}
+                    <div className="social_media">
+                        <ul className="">
+                            <li><a rel="noreferrer" target="_blank" href="https://www.facebook.com/coworkingdivinehub/"><i class="fa-brands fa-facebook-f"></i></a> </li>
+                            <li><a rel="noreferrer" target="_blank" href="https://www.instagram.com/divinehub_coworkingspace/"><i class="fa-brands fa-instagram"></i></a> </li>
+                            <li><a rel="noreferrer" target="_blank" href="https://www.linkedin.com/company/divinehubcoworkingspace"><i class="fa-brands fa-linkedin"></i></a> </li>
+                            <li><a rel="noreferrer" target="_blank" href="https://www.youtube.com/channel/UCHa1BIykpWdnlMsoxjOeiIQ"><i class="fa-brands fa-youtube"></i></a> </li>
+                        </ul>
                     </div>
                 </div>
             </div>

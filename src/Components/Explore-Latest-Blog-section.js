@@ -53,12 +53,12 @@ function Explorelatestblogsection() {
                         alt={Image}/>
                         <div className="explore-latest-title">
                           <div className="explore-latest-folder1">
-                            <div className="explore-latest-user">
+                            {/* <div className="explore-latest-user">
                               <div className="user-image">
                                 <img src="" alt="" />
                               </div>
                               <span>By: Admin</span>
-                            </div>
+                            </div> */}
                             <a href="/">
                               <i className="fas fa-share-alt"></i>
                             </a>

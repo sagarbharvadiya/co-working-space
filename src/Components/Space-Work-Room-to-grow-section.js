@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-// import Spacewraokdata from "./Spaceworkdata";
+// import Spacewraokdata from "../json_data/Spaceworkdata";
 
 function Spaceworkroomgrowsection() {
   const [posts, setPosts] = useState([]);

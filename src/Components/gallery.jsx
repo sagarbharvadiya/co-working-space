@@ -1,5 +1,5 @@
 import React from "react";
-import Ourgallerydata from '../gallery_data/data'
+import Ourgallerydata from '../json_data/data'
 
 function Gallery(){
     return(

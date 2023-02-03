@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
-
+import datajson from '../json_data/Flexiblepricedata';
 
 function Flexiblepriceplansection() {
   const [posts, setPosts] = useState([]);
   const [includes, setIncludes] = useState([]);
+  
   const { REACT_APP_BASE_URL } = process.env;
   useEffect(() => {
     async function loadPosts() {
@@ -31,7 +32,7 @@ function Flexiblepriceplansection() {
             We Have Flexible Pricing Plan
           </h2>
           <div className="flexible-price-folder">
-            {posts.map((post, index) => (
+            {/* {posts.map((post, index) => (
               <div className="flexible-price-blog-box-section" key={post.id}>
                 {includes.map((include, index2) => {
                   if (index === index2) {
@@ -79,7 +80,40 @@ function Flexiblepriceplansection() {
                   }
                 })}
               </div>
-            ))}
+            ))} */}
+
+            {/*  */}
+
+            {
+                            datajson.map((val) => {
+                                return <div className="flexible-price-blog-box-section">
+                                            <div className="what-we-offer-image-folder">
+                                                <img src={val.whatweimage} alt="img"/>
+                                            </div>
+                                            <div className="flexible-price-folder1">
+                                                <div className="flexible-price-image-folder">
+                                                    <h2>{val.text}</h2>
+                                                  
+                                                </div>
+                                                <span>{val.price}</span>
+                                            </div>
+                                            <div className="flexible-price-folder2">
+                                                <h2>{val.title}</h2>
+                                                <p>{val.des}</p>
+                                            </div>
+                                            <div className="flexible-price-des-section">
+                                                <div className="flexible-price-des-folder1">
+                                                    <p>{val.des2}</p>
+                                                </div>
+                                    
+                                            </div>
+                                            <div className="flexible-price-btn">
+                                                <a href={val.Choose_btn} target="_blank"><i class="fa-solid fa-arrow-right"></i></a>
+                                                <a href={val.Choose_btn} target="_blank"  class="Choose-Plan">Choose a Plan</a>
+                                            </div>
+                                        </div>
+                            })
+                        }
           </div>
         </div>
       </div>

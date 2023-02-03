@@ -6,7 +6,7 @@ import Home from './Pages/Home';
 import About from './Pages/About';
 import Locations from './Pages/Locations';
 import Workspaces from './Pages/Workspaces';
-import News from './Pages/News';
+import Blog from './Pages/Blog';
 import Contact from './Pages/Contact';
 import Footersection from './Components/Footer-section';
 
@@ -19,7 +19,7 @@ function App() {
         <Route exact path='/About' element={<About/>}></Route>
         <Route exact path='/Locations' element={<Locations/>}></Route>
         <Route exact path='/Workspaces' element={<Workspaces/>}></Route>
-        <Route exact path='/News' element={<News/>}></Route>
+        <Route exact path='/Blog' element={<Blog/>}></Route>
         <Route exact path='/Contact' element={<Contact/>}></Route>
       </Routes>
       <Footersection/>

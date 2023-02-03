@@ -35,7 +35,6 @@ function Passioninspirationalsection() {
                     <img className="left-img" src=
                     {REACT_APP_BASE_URL + include.attributes.uri.url}
                    alt="img" />
-                         
                   </div>
                 </div>
               ))}

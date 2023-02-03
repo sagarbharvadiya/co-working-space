@@ -4,29 +4,29 @@ import footerlogo from '../images/footer-image.png';
 import footeruserimage1 from '../images/populer-post-image1.jpg';
 import footeruserimage2 from '../images/populer-post-image2.jpg'
 
-function Footersection(){
-    return(
+function Footersection() {
+    return (
         <>
             <div className="footer-section">
                 <div className="footerwrapper">
                     <div className="Get-Inspired-Collaboration">
                         <div className="collaboration-logo">
-                            <img src={collabrationimage}/>
+                            <img src={collabrationimage} alt="img" />
                         </div>
                         <span>DOING GOOD, TOGETHER.</span>
                         <h2>Get Inspired to The Collaboration</h2>
                         <div className="get-collabration-btns">
                             <div className="call-btn">
-                                <a href="#"><i className="fa-solid fa-phone"></i></a>
-                                <a href="#" className="number">312-509-6995</a>
+                                <a href="tel:9987547773"><i className="fa-solid fa-phone"></i></a>
+                                <a href="tel:9987547773" className="number">99875 47773</a>
                             </div>
                             <div className="Appointment-btn">
-                                <a href="#"><i className="fa-solid fa-arrow-right"></i></a>
-                                <a href="#" className="Appointment">Appointment</a>
+                                <a href="mailto:cowork@divinehub.co.in"><i className="fa-solid fa-arrow-right"></i></a>
+                                <a href="mailto:cowork@divinehub.co.in" className="Appointment">Appointment</a>
                             </div>
                         </div>
                     </div>
-                    <div className="footer-contenar">
+                    {/* <div className="footer-contenar">
                         <div className="footer-folder1">
                             <div className="footer-logo">
                                 <img src={footerlogo}/>
@@ -89,6 +89,23 @@ function Footersection(){
                                     </h2>
                                 </div>
                             </div>
+                        </div>
+                    </div> */}
+                    <div className="footer-copy">
+                        <div className="container">
+                        <div className="d-flex">
+                            <div className="social_media">
+                                <ul className="">
+                                    <li><a rel="noreferrer" target="_blank" href="https://www.facebook.com/coworkingdivinehub/"><i class="fa-brands fa-facebook-f"></i></a> </li>
+                                    <li><a rel="noreferrer" target="_blank" href="https://www.instagram.com/divinehub_coworkingspace/"><i class="fa-brands fa-instagram"></i></a> </li>
+                                    <li><a rel="noreferrer" target="_blank" href="https://www.linkedin.com/company/divinehubcoworkingspace"><i class="fa-brands fa-linkedin"></i></a> </li>
+                                    <li><a rel="noreferrer" target="_blank" href="https://www.youtube.com/channel/UCHa1BIykpWdnlMsoxjOeiIQ"><i class="fa-brands fa-youtube"></i></a> </li>
+                                </ul>
+                            </div>
+                            <div className="copy_text">
+                            <p><span>Copyright © 2023 | DivineHub</span></p>
+                            </div>
+                        </div>
                         </div>
                     </div>
                 </div>

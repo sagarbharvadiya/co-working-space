@@ -10,7 +10,7 @@ export default class Coworkingcitiessection extends Component {
       arrows: false,
       infinite: true,
       speed: 500,
-      autoplay: false,
+      autoplay: true,
       slidesToShow: 3,
       slidesToScroll: 3,
       responsive: [
@@ -21,6 +21,7 @@ export default class Coworkingcitiessection extends Component {
             slidesToScroll: 1,
             infinite: true,
             dots: true,
+            autoplay: true,
           },
         },
         {
@@ -67,7 +68,7 @@ export default class Coworkingcitiessection extends Component {
             <div className="coworking-cities-filter-folder">
               <button>Office Space</button>
               <button>Private Space</button>
-              <button>Open Space</button>
+              {/* <button>Open Space</button> */}
               <button>Meeting Rooms</button>
             </div>
             <div className="coworking-cities-folder">
