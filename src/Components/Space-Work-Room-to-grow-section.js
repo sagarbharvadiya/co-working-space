@@ -41,12 +41,14 @@ function Spaceworkroomgrowsection() {
                         <div className="space-work-image">
                           <img src={REACT_APP_BASE_URL + include.attributes.uri.url} alt="banner" />
                         </div>
+                        <div className="we_offer_desc">
                         <span>WE OFFER</span>
                         <h2>{post.attributes.field_what_we_offer_title.value}</h2>
                         <p>{post.attributes.field_what_we_offer_subtitle.value}</p>
                         <a href="/" className="space-work-btn">
-                          Readmore
+                          Read More
                         </a>
+                        </div>
                       </>
                     );
                   }

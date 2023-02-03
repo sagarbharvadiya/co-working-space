@@ -1,5 +1,5 @@
 import React from "react";
-import collabrationimage from '../images/together.jpg';
+import collabrationimage from '../images/together.png';
 // import footerlogo from '../images/footer-image.png';
 // import footeruserimage1 from '../images/populer-post-image1.jpg';
 // import footeruserimage2 from '../images/populer-post-image2.jpg'

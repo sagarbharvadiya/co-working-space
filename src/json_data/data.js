@@ -1,5 +1,5 @@
 const Ourgallerydata=[
-    {
+    {   id:1,
         image1:"images/our-gallery-image1.jpg",
         image2:"images/our-gallery-image2.jpg",
         image3:"images/our-gallery-image3.jpg",
@@ -8,7 +8,7 @@ const Ourgallerydata=[
         title2:"On-Site Management",
         Details:"Details",
     },
-    {
+    { id:2,
         image1:"images/our-gallery-image1.jpg",
         image2:"images/our-gallery-image2.jpg",
         image3:"images/our-gallery-image3.jpg",

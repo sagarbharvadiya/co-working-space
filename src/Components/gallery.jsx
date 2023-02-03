@@ -19,30 +19,32 @@ function Gallery(){
                     <div className="our-gallrey-folder">
                         {
                             Ourgallerydata.map((val) => {
-                                return <div className="our-gallery-blog-box-section">
+                                return(
+                                    <React.Fragment key={val.id}>
+                                           <div className="our-gallery-blog-box-section">
                                             <div className="our-gallery-contenar">
                                                 <div className="our-gallery-folder1">
                                                     <div className="our-gallery-image-folder1">
                                                         <div className="our-gallery-image1">
-                                                            <img src={val.image1}/>
+                                                            <img src={val.image1} alt={val.image1}/>
                                                         </div>
                                                         <div className="our-gallery-title1">
                                                             <h2>{val.title1}</h2>
                                                             <div className="our-gallery-btn">
-                                                                <a href="#"><i className="fa-solid fa-arrow-right"></i></a>
-                                                                <a href="#" className="details">{val.Details}</a>
+                                                                <a href="/"><i className="fa-solid fa-arrow-right"></i></a>
+                                                                <a href="/" className="details">{val.Details}</a>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div className="our-gallery-image-folder1">
                                                         <div className="our-gallery-image1">
-                                                            <img src={val.image2}/>
+                                                            <img src={val.image2} alt={val.image2}/>
                                                         </div>
                                                         <div className="our-gallery-title1">
                                                             <h2>{val.title1}</h2>
                                                             <div className="our-gallery-btn">
-                                                                <a href="#"><i className="fa-solid fa-arrow-right"></i></a>
-                                                                <a href="#" className="details">{val.Details}</a>
+                                                                <a href="/"><i className="fa-solid fa-arrow-right"></i></a>
+                                                                <a href="/" className="details">{val.Details}</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -73,6 +75,9 @@ function Gallery(){
                                                 </div>
                                             </div>
                                         </div>
+                                    </React.Fragment>
+                                )
+                          
                             })
                         }
                     </div>

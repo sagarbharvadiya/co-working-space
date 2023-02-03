@@ -23,7 +23,7 @@ function Inforsection() {
     return (
         <>
             <div className="info-section">
-            <h2 class="amenities_text">Amenities</h2>
+            <h2 className="amenities_text">Amenities</h2>
                 <div className="infowrapper">
                     <div className="info-folder">
                         {
