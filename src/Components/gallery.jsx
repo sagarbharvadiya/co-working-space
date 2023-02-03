@@ -11,10 +11,10 @@ function Gallery(){
                                 <p>Our Gallery</p>
                                 <h2>Inspirational Workspace</h2>
                             </div>
-                            <div className="better-office-envirment-folder2">
-                                <a href="/"><i class="fa-solid fa-arrow-right"></i></a>
-                                <a href="/" class="better-office-envirment-read-more">View More</a>
-                            </div>
+                            {/* <div className="better-office-envirment-folder2">
+                                <a href="/"><i className="fa-solid fa-arrow-right"></i></a>
+                                <a href="/" className="better-office-envirment-read-more">View More</a>
+                            </div> */}
                         </div>
                     <div className="our-gallrey-folder">
                         {
@@ -29,8 +29,8 @@ function Gallery(){
                                                         <div className="our-gallery-title1">
                                                             <h2>{val.title1}</h2>
                                                             <div className="our-gallery-btn">
-                                                                <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
-                                                                <a href="#" class="details">{val.Details}</a>
+                                                                <a href="#"><i className="fa-solid fa-arrow-right"></i></a>
+                                                                <a href="#" className="details">{val.Details}</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -41,8 +41,8 @@ function Gallery(){
                                                         <div className="our-gallery-title1">
                                                             <h2>{val.title1}</h2>
                                                             <div className="our-gallery-btn">
-                                                                <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
-                                                                <a href="#" class="details">{val.Details}</a>
+                                                                <a href="#"><i className="fa-solid fa-arrow-right"></i></a>
+                                                                <a href="#" className="details">{val.Details}</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -54,8 +54,8 @@ function Gallery(){
                                                     <div className="our-gallery-title1">
                                                         <h2>{val.title1}</h2>
                                                         <div className="our-gallery-btn">
-                                                            <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
-                                                            <a href="#" class="details">{val.Details}</a>
+                                                            <a href="#"><i className="fa-solid fa-arrow-right"></i></a>
+                                                            <a href="#" className="details">{val.Details}</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -67,8 +67,8 @@ function Gallery(){
                                                 <div className="our-gallery-title2">
                                                     <h2>{val.title2}</h2>
                                                     <div className="our-gallery-btn2">
-                                                        <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
-                                                        <a href="#" class="details">{val.Details}</a>
+                                                        <a href="#"><i className="fa-solid fa-arrow-right"></i></a>
+                                                        <a href="#" className="details">{val.Details}</a>
                                                     </div>
                                                 </div>
                                             </div>

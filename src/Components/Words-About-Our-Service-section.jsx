@@ -76,14 +76,14 @@ const Whataboutourservices = () => {
               <p>Testimonials</p>
               <h2>Words About Our Service</h2>
             </div>
-            <div className="better-office-envirment-folder2">
+            {/* <div className="better-office-envirment-folder2">
               <a href="/">
                 <i className="fa-solid fa-arrow-right"></i>
               </a>
               <a href="/" className="better-office-envirment-read-more">
                 Read More
               </a>
-            </div>
+            </div> */}
           </div>
 
           <div className="words-about-our-services-folder">

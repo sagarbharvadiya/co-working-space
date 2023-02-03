@@ -1,11 +1,13 @@
 import React from 'react'
-import GoogleMap from '../Components/Google_map'
+import GoogleMap from '../Components/Google-map'
+
 
 
 const Locations = () => {
   return (
     <>
-     <GoogleMap/>
+    <GoogleMap/>
+    
     </>
   )
 }

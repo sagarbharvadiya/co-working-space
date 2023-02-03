@@ -1,28 +1,38 @@
 import React, { useEffect, useState } from "react";
 import datajson from '../json_data/Flexiblepricedata';
+import Slider from "react-slick";
 
 function Flexiblepriceplansection() {
-  const [posts, setPosts] = useState([]);
-  const [includes, setIncludes] = useState([]);
-  
-  const { REACT_APP_BASE_URL } = process.env;
-  useEffect(() => {
-    async function loadPosts() {
-      const response = await fetch(
-        `${REACT_APP_BASE_URL}/jsonapi/node/pricing_plans?include=field_icon`
-      );
-      if (!response.ok) {
-        // oups! something went wrong
-        return;
-      }
-      const jsonData = await response.json();
-      const includes = jsonData.included;
-      const posts = jsonData.data;
-      setPosts(posts);
-      setIncludes(includes);
-    }
-    loadPosts();
-  }, []);
+  // const [posts, setPosts] = useState([]);
+  // const [includes, setIncludes] = useState([]);
+
+  // const { REACT_APP_BASE_URL } = process.env;
+  // useEffect(() => {
+  //   async function loadPosts() {
+  //     const response = await fetch(
+  //       `${REACT_APP_BASE_URL}/jsonapi/node/pricing_plans?include=field_icon`
+  //     );
+  //     if (!response.ok) {
+  //       // oups! something went wrong
+  //       return;
+  //     }
+  //     const jsonData = await response.json();
+  //     const includes = jsonData.included;
+  //     const posts = jsonData.data;
+  //     setPosts(posts);
+  //     setIncludes(includes);
+  //   }
+  //   loadPosts();
+  // }, []);
+  const settings = {
+    dots: false,
+    arrows: false,
+    infinite: true,
+    speed: 500,
+    autoplay: false,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+  };
   return (
     <>
       <div className="flexible-price-plan-section">
@@ -83,37 +93,41 @@ function Flexiblepriceplansection() {
             ))} */}
 
             {/*  */}
+            <Slider {...settings}>
+              {
+                datajson.map((val) => {
 
-            {
-                            datajson.map((val) => {
-                                return <div className="flexible-price-blog-box-section">
-                                            <div className="what-we-offer-image-folder">
-                                                <img src={val.whatweimage} alt="img"/>
-                                            </div>
-                                            <div className="flexible-price-folder1">
-                                                <div className="flexible-price-image-folder">
-                                                    <h2>{val.text}</h2>
-                                                  
-                                                </div>
-                                                <span>{val.price}</span>
-                                            </div>
-                                            <div className="flexible-price-folder2">
-                                                <h2>{val.title}</h2>
-                                                <p>{val.des}</p>
-                                            </div>
-                                            <div className="flexible-price-des-section">
-                                                <div className="flexible-price-des-folder1">
-                                                    <p>{val.des2}</p>
-                                                </div>
-                                    
-                                            </div>
-                                            <div className="flexible-price-btn">
-                                                <a href={val.Choose_btn} target="_blank"><i class="fa-solid fa-arrow-right"></i></a>
-                                                <a href={val.Choose_btn} target="_blank"  class="Choose-Plan">Choose a Plan</a>
-                                            </div>
-                                        </div>
-                            })
-                        }
+                  return (
+                    <div className="flexible-price-blog-box-section">
+                      <div className="what-we-offer-image-folder">
+                        <img src={val.whatweimage} alt="img" />
+                      </div>
+                      <div className="flexible-price-folder1">
+                        <div className="flexible-price-image-folder">
+                          <h2>{val.text}</h2>
+
+                        </div>
+                        <span>{val.price}</span>
+                      </div>
+                      <div className="flexible-price-folder2">
+                        <h2>{val.title}</h2>
+                        <p>{val.des}</p>
+                      </div>
+                      <div className="flexible-price-des-section">
+                        <div className="flexible-price-des-folder1">
+                          <p>{val.des2}</p>
+                        </div>
+
+                      </div>
+                      <div className="flexible-price-btn">
+                        <a href={val.Choose_btn} rel="noreferrer" target="_blank"><i className="fa-solid fa-arrow-right"></i></a>
+                        <a href={val.Choose_btn} rel="noreferrer" target="_blank" className="Choose-Plan">Choose a Plan</a>
+                      </div>
+                    </div>
+                  )
+                })
+              }
+            </Slider>
           </div>
         </div>
       </div>

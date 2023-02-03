@@ -20,8 +20,8 @@ function Topheadersection() {
                         </div>
                         <div onClick={toggleModal} className="menu">
                             <li><NavLink to="/">Home</NavLink></li>
-                            <li><NavLink to="About">About</NavLink></li>
-                            <li><NavLink to="/Location">Location</NavLink></li>
+                            {/* <li><NavLink to="About">About</NavLink></li> */}
+                            <li><NavLink to="/Locations">Location</NavLink></li>
                             <li><NavLink to="/Workspaces">Workspaces</NavLink></li>
                             <li><NavLink to="/Blog">Blog</NavLink></li>
                             <li><NavLink to="/Contact">Contact</NavLink></li>
@@ -45,8 +45,8 @@ function Topheadersection() {
                     </div>
                     <div onClick={toggleModal} className="menu-folder">
                         <li><NavLink to="/">Home</NavLink></li>
-                        <li><NavLink to="About">About</NavLink></li>
-                        <li><NavLink to="/Location">Location</NavLink></li>
+                        {/* <li><NavLink to="About">About</NavLink></li> */}
+                        <li><NavLink to="/Locations">Location</NavLink></li>
                         <li><NavLink to="/Workspaces">Workspaces</NavLink></li>
                         <li><NavLink to="/Blog">Blog</NavLink></li>
                         <li><NavLink to="/Contact">Contact</NavLink></li>
@@ -62,10 +62,10 @@ function Topheadersection() {
                     </div> */}
                     <div className="social_media">
                         <ul className="">
-                            <li><a rel="noreferrer" target="_blank" href="https://www.facebook.com/coworkingdivinehub/"><i class="fa-brands fa-facebook-f"></i></a> </li>
-                            <li><a rel="noreferrer" target="_blank" href="https://www.instagram.com/divinehub_coworkingspace/"><i class="fa-brands fa-instagram"></i></a> </li>
-                            <li><a rel="noreferrer" target="_blank" href="https://www.linkedin.com/company/divinehubcoworkingspace"><i class="fa-brands fa-linkedin"></i></a> </li>
-                            <li><a rel="noreferrer" target="_blank" href="https://www.youtube.com/channel/UCHa1BIykpWdnlMsoxjOeiIQ"><i class="fa-brands fa-youtube"></i></a> </li>
+                            <li><a rel="noreferrer" target="_blank" href="https://www.facebook.com/coworkingdivinehub/"><i className="fa-brands fa-facebook-f"></i></a> </li>
+                            <li><a rel="noreferrer" target="_blank" href="https://www.instagram.com/divinehub_coworkingspace/"><i className="fa-brands fa-instagram"></i></a> </li>
+                            <li><a rel="noreferrer" target="_blank" href="https://www.linkedin.com/company/divinehubcoworkingspace"><i className="fa-brands fa-linkedin"></i></a> </li>
+                            <li><a rel="noreferrer" target="_blank" href="https://www.youtube.com/channel/UCHa1BIykpWdnlMsoxjOeiIQ"><i className="fa-brands fa-youtube"></i></a> </li>
                         </ul>
                     </div>
                 </div>

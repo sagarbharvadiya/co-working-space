@@ -59,9 +59,9 @@ function Explorelatestblogsection() {
                               </div>
                               <span>By: Admin</span>
                             </div> */}
-                            <a href="/">
+                            {/* <a href="/">
                               <i className="fas fa-share-alt"></i>
-                            </a>
+                            </a> */}
                           </div>
                           <h2>{post.attributes.field_blog_title.value}</h2>
                           <p>
@@ -71,13 +71,13 @@ function Explorelatestblogsection() {
                             )}
                           </p>
                           <div className="exlpore-latest-date-section">
-                            <p className="explore-latest-date">
+                            {/* <p className="explore-latest-date">
                               {post.attributes.field_blog_date}
-                            </p>
+                            </p> */}
                             <div className="explore-latest-btn">
-                              <a href="/">
+                              {/* <a href="/">
                                 <i className="fa-solid fa-arrow-right"></i>
-                              </a>
+                              </a> */}
                               <a href="/" className="explore-latest-read-more">
                                 Read More
                               </a>

@@ -1,8 +1,8 @@
 import React from "react";
-import collabrationimage from '../images/user-counter-image1.png';
-import footerlogo from '../images/footer-image.png';
-import footeruserimage1 from '../images/populer-post-image1.jpg';
-import footeruserimage2 from '../images/populer-post-image2.jpg'
+import collabrationimage from '../images/together.jpg';
+// import footerlogo from '../images/footer-image.png';
+// import footeruserimage1 from '../images/populer-post-image1.jpg';
+// import footeruserimage2 from '../images/populer-post-image2.jpg'
 
 function Footersection() {
     return (
@@ -96,10 +96,10 @@ function Footersection() {
                         <div className="d-flex">
                             <div className="social_media">
                                 <ul className="">
-                                    <li><a rel="noreferrer" target="_blank" href="https://www.facebook.com/coworkingdivinehub/"><i class="fa-brands fa-facebook-f"></i></a> </li>
-                                    <li><a rel="noreferrer" target="_blank" href="https://www.instagram.com/divinehub_coworkingspace/"><i class="fa-brands fa-instagram"></i></a> </li>
-                                    <li><a rel="noreferrer" target="_blank" href="https://www.linkedin.com/company/divinehubcoworkingspace"><i class="fa-brands fa-linkedin"></i></a> </li>
-                                    <li><a rel="noreferrer" target="_blank" href="https://www.youtube.com/channel/UCHa1BIykpWdnlMsoxjOeiIQ"><i class="fa-brands fa-youtube"></i></a> </li>
+                                    <li><a rel="noreferrer" target="_blank" href="https://www.facebook.com/coworkingdivinehub/"><i className="fa-brands fa-facebook-f"></i></a> </li>
+                                    <li><a rel="noreferrer" target="_blank" href="https://www.instagram.com/divinehub_coworkingspace/"><i className="fa-brands fa-instagram"></i></a> </li>
+                                    <li><a rel="noreferrer" target="_blank" href="https://www.linkedin.com/company/divinehubcoworkingspace"><i className="fa-brands fa-linkedin"></i></a> </li>
+                                    <li><a rel="noreferrer" target="_blank" href="https://www.youtube.com/channel/UCHa1BIykpWdnlMsoxjOeiIQ"><i className="fa-brands fa-youtube"></i></a> </li>
                                 </ul>
                             </div>
                             <div className="copy_text">

@@ -43,7 +43,7 @@ const Flexiblepricedata=[
     // },
     {
         whatweimage:"images/what-we-image1.jpeg",
-        text:"DEDICATED",
+        // text:"DEDICATED",
         price:"₹6500",
         title:"Dedicated Desks",
         des:"Rs. 6500 per person per month",
@@ -52,7 +52,7 @@ const Flexiblepricedata=[
     },
     {
         whatweimage:"images/what-we-image2.jpeg",
-        text:"CABIN",   
+        // text:"CABIN",   
         price:"₹11000",
         title:"Private Offices",
         des:"Rs. 11000 per person per month",
@@ -61,7 +61,7 @@ const Flexiblepricedata=[
     },
     {
         whatweimage:"images/what-we-image3.jpg",
-        text:"DAY PASS",   
+        // text:"DAY PASS",   
         price:"₹600",
         title:"DAY PASS",
         des:"Rs.600 per person per day",
@@ -71,7 +71,7 @@ const Flexiblepricedata=[
     },
     {
         whatweimage:"images/what-we-image4.jpg",
-        text:"VIRTUAL OFFICE",
+        // text:"VIRTUAL OFFICE",
         price:"₹9000",
         title:"Virtual Office",
         des:"Starting from Rs. 9000 per month",   
