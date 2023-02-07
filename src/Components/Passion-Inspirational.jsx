@@ -16,7 +16,6 @@ function Passioninspirationalsection() {
       const jsonData = await response.json();
       const includes = jsonData.included;
       const posts = jsonData.data;
-      console.log(posts);
       setPosts(posts);
       setIncludes(includes);
     }

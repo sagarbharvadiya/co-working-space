@@ -2,20 +2,19 @@ import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 
 const Ourgallerylogosection = () => {
-  const [includes, setIncludes] = useState([]);
+  const [posts, setPosts] = useState([]);
   const { REACT_APP_BASE_URL } = process.env;
   useEffect(() => {
     async function loadPosts() {
       const response = await fetch(
-        `${REACT_APP_BASE_URL}/jsonapi/node/our_clients_logo_?include=field_logo`
+        `${REACT_APP_BASE_URL}/divinehub/our_client_logo`
       );
       if (!response.ok) {
         // oups! something went wrong
         return;
       }
-      const jsonData = await response.json();
-      const includes = jsonData.included;
-      setIncludes(includes);
+      const posts = await response.json();
+      setPosts(posts);
     }
     loadPosts();
   }, []);
@@ -59,10 +58,10 @@ const Ourgallerylogosection = () => {
 
       <div className="brand_logos">
         <Slider {...settings}>
-          {includes.map((include, index2) => (
+          {posts.map((post, index) => (
             <div className="">
               <div className="our-gallery-logo-image">
-                <img src={REACT_APP_BASE_URL + include.attributes.uri.url} alt="" />
+                <img src={`${REACT_APP_BASE_URL}${post.field_logo}`} alt="image" />
               </div>
             </div>
           ))}
