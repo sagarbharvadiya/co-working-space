@@ -1,29 +1,24 @@
 import React, { useEffect, useState } from "react";
-import datajson from '../json_data/Flexiblepricedata';
 import Slider from "react-slick";
 
-function Flexiblepriceplansection() {
-  // const [posts, setPosts] = useState([]);
-  // const [includes, setIncludes] = useState([]);
 
-  // const { REACT_APP_BASE_URL } = process.env;
-  // useEffect(() => {
-  //   async function loadPosts() {
-  //     const response = await fetch(
-  //       `${REACT_APP_BASE_URL}/jsonapi/node/pricing_plans?include=field_icon`
-  //     );
-  //     if (!response.ok) {
-  //       // oups! something went wrong
-  //       return;
-  //     }
-  //     const jsonData = await response.json();
-  //     const includes = jsonData.included;
-  //     const posts = jsonData.data;
-  //     setPosts(posts);
-  //     setIncludes(includes);
-  //   }
-  //   loadPosts();
-  // }, []);
+function Flexiblepriceplansection() {
+  const [posts, setPosts] = useState([]);
+  const { REACT_APP_BASE_URL } = process.env;
+  useEffect(() => {
+    async function loadPosts() {
+      const response = await fetch(
+        `${REACT_APP_BASE_URL}/divinehub/pricing_plan`
+      );
+      if (!response.ok) {
+        // oups! something went wrong
+        return;
+      }
+      const posts = await response.json();
+      setPosts(posts);
+    }
+    loadPosts();
+  }, []);
   const settings = {
     dots: false,
     arrows: false,
@@ -41,7 +36,7 @@ function Flexiblepriceplansection() {
           infinite: true,
           dots: true,
           arrows: true,
-          autoplay:true,
+          autoplay: true,
         },
       },
       {
@@ -51,7 +46,7 @@ function Flexiblepriceplansection() {
           slidesToScroll: 1,
           initialSlide: 1,
           arrows: false,
-          autoplay:false,
+          autoplay: false,
         },
       },
       {
@@ -61,7 +56,7 @@ function Flexiblepriceplansection() {
           slidesToScroll: 1,
           initialSlide: 1,
           arrows: true,
-          autoplay:false,
+          autoplay: false,
         },
       },
       {
@@ -70,7 +65,7 @@ function Flexiblepriceplansection() {
           slidesToShow: 1,
           slidesToScroll: 1,
           arrows: true,
-          autoplay:false,
+          autoplay: false,
         },
       },
     ],
@@ -101,9 +96,9 @@ function Flexiblepriceplansection() {
                           <span>${post.attributes.field_price}</span>
                         </div>
                         <div className="flexible-price-folder2">
-                          <h2>{post.attributes.field_title[0].value}</h2>
+                          <h2>{post.attributes.title}</h2>
                           <p>
-                            {post.attributes.field_sub_title[0].value.replace(
+                            {post.attributes.field_sub_title.replace(
                               /<\/?[^>]+(>|$)/g,
                               ""
                             )}
@@ -112,7 +107,7 @@ function Flexiblepriceplansection() {
                         <div className="flexible-price-des-section">
                           <div className="flexible-price-des-folder1">
                             <p>
-                              {post.attributes.field_description[0].value.replace(
+                              {post.attributes.field_description.replace(
                                 /<\/?[^>]+(>|$)/g,
                                 ""
                               )}
@@ -136,39 +131,54 @@ function Flexiblepriceplansection() {
 
             {/*  */}
             <Slider {...settings}>
-              {
-                datajson.map((val) => {
-
-                  return (
-                    <div className="flexible-price-blog-box-section">
-                      <div className="what-we-offer-image-folder">
-                        <img src={val.whatweimage} alt="img" />
+              {posts.map((post) => {
+                return (
+                  <div className="flexible-price-blog-box-section">
+                    <div className="what-we-offer-image-folder">
+                      <img src={`${REACT_APP_BASE_URL}${post.field_icon}`} />
+                    </div>
+                    <div className="flexible-price-folder1">
+                      <div className="flexible-price-image-folder">
+                        {/* <h2>{post.title}</h2> */}
                       </div>
-                      <div className="flexible-price-folder1">
-                        <div className="flexible-price-image-folder">
-                          <h2>{val.text}</h2>
-
-                        </div>
-                        <span>{val.price}</span>
-                      </div>
-                      <div className="flexible-price-folder2">
-                        <h2>{val.title}</h2>
-                        <p>{val.des}</p>
-                      </div>
-                      <div className="flexible-price-des-section">
-                        <div className="flexible-price-des-folder1">
-                          <p>{val.des2}</p>
-                        </div>
-
-                      </div>
-                      <div className="flexible-price-btn">
-                        <a href={val.Choose_btn} rel="noreferrer" target="_blank"><i className="fa-solid fa-arrow-right"></i></a>
-                        <a href={val.Choose_btn} rel="noreferrer" target="_blank" className="Choose-Plan">Choose a Plan</a>
+                      <span>{post.field_price}</span>
+                    </div>
+                    <div className="flexible-price-folder2">
+                      <h2>{post.title.replace(/<\/?[^>]+(>|$)/g, "")}</h2>
+                      <p>
+                        {post.field_sub_title.replace(/<\/?[^>]+(>|$)/g, "")}
+                      </p>
+                    </div>
+                    <div className="flexible-price-des-section">
+                      <div className="flexible-price-des-folder1">
+                        <p>
+                          {post.field_description.replace(
+                            /<\/?[^>]+(>|$)/g,
+                            ""
+                          )}
+                        </p>
                       </div>
                     </div>
-                  )
-                })
-              }
+                    <div className="flexible-price-btn">
+                      <a
+                        href={post.field_razorpay_link}
+                        rel="noreferrer"
+                        target="_blank"
+                      >
+                        <i className="fa-solid fa-arrow-right"></i>
+                      </a>
+                      <a
+                        href={post.field_razorpay_link}
+                        rel="noreferrer"
+                        target="_blank"
+                        className="Choose-Plan"
+                      >
+                        Choose a Plan
+                      </a>
+                    </div>
+                  </div>
+                );
+              })}
             </Slider>
           </div>
         </div>
