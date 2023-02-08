@@ -29,7 +29,7 @@ function Explorelatestblogsection() {
                 <div className="explore-latest-blog-image">
                   <img
                     src={`${REACT_APP_BASE_URL}${post.field_blog_image}`}
-                    alt="Image"
+                    alt="Images"
                   />
                   <div className="explore-latest-title">
                     <h2>{post.title}</h2>
