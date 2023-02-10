@@ -2172,7 +2172,7 @@ img {
   margin: 0px auto 0px auto;
 }
 
-@media (min-width: 1520px) and (max-width: 1902px) {
+@media (min-width: 1420px) and (max-width: 1920px) {
 
   .info-blog-box-section h4 {
     font-size: 18px;
