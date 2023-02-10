@@ -9,12 +9,9 @@ import Workspaces from './Pages/Workspaces';
 import Blog from './Pages/Blog';
 import Contact from './Pages/Contact';
 import Footersection from './Components/Footer-section';
-<<<<<<< HEAD
-
-=======
 import BlogFull from './Components/BlogFull';
 import WhatWeOfferFull from './Components/What-We-Offer-full'
->>>>>>> d6f1a63711d7d008681ec8c5be8530cfd82af548
+
 
 function App() {
   return (

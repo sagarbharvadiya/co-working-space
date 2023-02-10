@@ -20,11 +20,7 @@ function Passioninspirationalsection() {
       setIncludes(includes);
     }
     loadPosts();
-<<<<<<< HEAD
   },[]);
-=======
-  }, []);
->>>>>>> d6f1a63711d7d008681ec8c5be8530cfd82af548
   return (
     <>
       {posts.map((post, index) => (
