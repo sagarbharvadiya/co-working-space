@@ -16,7 +16,7 @@ import Spaceworkroomgrowsection from '../Components/Space-Work-Room-to-grow-sect
 import Whataboutourservices from '../Components/Words-About-Our-Service-section'
 import Passioninspirationalsection from '../Components/Passion-Inspirational'
 import GoogleMap from '../Components/Google-map';
-
+import ChatBotApp from '../Components/ChatBotApp';
 
 const Home = () => {
 
@@ -39,7 +39,7 @@ const Home = () => {
       <Explorelatestblogsection />
       <Booktoursection />
       {/* <UserCountersection /> */}
-
+      <ChatBotApp/>
     </>
   )
 }
