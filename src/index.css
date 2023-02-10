@@ -1006,7 +1006,7 @@ h6 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 16px;
+  /* margin-bottom: 16px; */
 }
 
 .flexible-price-folder1 span {
@@ -2222,10 +2222,6 @@ img {
     width: 387px;
   }
 
-  .passtion-inspirational-right-section h2 {
-    font-size: 49px;
-  }
-
   .passtion-inspirational-right-section p {
     font-size: 21px;
     max-width: 627px;
@@ -2233,37 +2229,115 @@ img {
   .passtioninspriractionwrapper {
     max-width: 1359px;
 }
-.flexible-price-folder1 span {
-  font-size: 32px;
-  position: relative;
-  right: -2%;
-  top: -283px;
-}
-.flexible-price-folder {
-  max-width: 1359px;
-}
-.flexible-price-folder2 h2 {
-    font-size: 31px;
-}
-.flexible-price-des-folder1 p, .flexible-price-folder2 p {
-  font-size: 20px;
-  margin-top: 7px;
-}
-.flexible-price-btn {
-  font-size: 21px;
-}
-.our-gallery-folder3 {
-  max-width: 317px;
-}
-.our-gallery-image-folder1 {
-  max-width: 146px;
-}
-.our-gallery-folder2 {
-  max-width: 310px;
-}
-.gmap_canvas {
-  max-width: 1300px;
-}
+  .flexible-price-folder1 span {
+    font-size: 32px;
+    position: relative;
+    right: -2%;
+    top: -283px;
+  }
+  .flexible-price-folder {
+    max-width: 1359px;
+  }
+  .flexible-price-folder2 h2 {
+      font-size: 31px;
+  }
+  .flexible-price-des-folder1 p, .flexible-price-folder2 p {
+    font-size: 20px;
+    margin-top: 7px;
+  }
+  .flexible-price-btn {
+    font-size: 21px;
+  }
+  .our-gallery-folder3 {
+    max-width: 317px;
+  }
+  .our-gallery-image-folder1 {
+    max-width: 146px;
+  }
+  .our-gallery-folder2 {
+    max-width: 310px;
+  }
+  .gmap_canvas {
+    max-width: 1300px;
+  }
+  .Kodesk-difference-folder1 h2 {
+    font-size: 21px;
+  }
+  .flexible-price-blog-box-section {
+    width: 428px!important;
+  }
+  .our-gallery-image3 img {
+    height: 468px;
+  }
+  .words-about-our-services-blog-box-section p {
+    font-size: 21px;
+    margin: 15px 0 17px;
+    max-width: 475px;
+  }
+  .words-about-our-services-stars {
+    font-size: 18px;
+  }
+  .words-about-our-services-image img{
+    width: 75px;
+  }
+  .words-about-our-services-title h2 {
+    font-size: 26px;
+  }
+  .words-about-our-services-title span {
+    font-size: 22px;
+  }
+  .our-gallery-logo-image img {
+    width: 186px;
+  }
+  .our-gallery-logo-image {
+    width: 208px;
+  } 
+  .explore-latest-blog-box-section {
+    width: 417px;
+  }
+  .explore-latest-title h2 {
+    font-size: 23px;
+    margin: 15px 0px 0px 36px;
+  }
+  .explore-latest-title h2 {
+    font-size: 23px;
+    margin: 15px 0px 0px 36px;
+  }
+  .exlpore-latest-date-section {
+    margin: 14px 39px;
+    padding-top: 14px;
+  }
+  .book-tour-folder {
+    max-width: 1321px;
+  }
+  .Get-Inspired-Collaboration {
+    max-width: 1324px;
+    margin-bottom: -161px;
+  }
+  .Get-Inspired-Collaboration span {
+    font-size: 22px;
+  }
+  .Appointment-btn, .call-btn {
+    font-size: 23px;
+    padding: 14px 32px;
+  }
+  .footer-copy .social_media a {
+    font-size: 28px;
+  }
+  .copy_text p span {
+    font-size: 18px;
+  }
+  .footer-copy {
+    height: 292px;
+    padding-top: 50px;
+    padding-bottom: 21px;
+    width: 100%;
+  }
+  .container{
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+  }
 }
 
 @media only screen and (max-width: 1024px) {

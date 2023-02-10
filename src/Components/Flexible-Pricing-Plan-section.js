@@ -24,7 +24,7 @@ function Flexiblepriceplansection() {
     arrows: false,
     infinite: true,
     speed: 500,
-    autoplay: false,
+    autoplay: true,
     slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [
@@ -133,50 +133,53 @@ function Flexiblepriceplansection() {
             <Slider {...settings}>
               {posts.map((post) => {
                 return (
-                  <div className="flexible-price-blog-box-section">
-                    <div className="what-we-offer-image-folder">
-                      <img src={`${REACT_APP_BASE_URL}${post.field_icon}`} alt={post.field_icon}/>
-                    </div>
-                    <div className="flexible-price-folder1">
-                      <div className="flexible-price-image-folder">
-                        {/* <h2>{post.title}</h2> */}
+                  <React.Fragment key={post.id}>
+                    <div className="flexible-price-blog-box-section">
+                      <div className="what-we-offer-image-folder">
+                        <img src={`${REACT_APP_BASE_URL}${post.field_icon}`} alt={post.field_icon} />
                       </div>
-                      <span>₹ {post.field_price}</span>
-                    </div>
-                    <div className="flexible-price-folder2">
-                      <h2>{post.title.replace(/<\/?[^>]+(>|$)/g, "")}</h2>
-                      <p>
-                        {post.field_sub_title.replace(/<\/?[^>]+(>|$)/g, "")}
-                      </p>
-                    </div>
-                    <div className="flexible-price-des-section">
-                      <div className="flexible-price-des-folder1">
+                      <div className="flexible-price-folder1">
+                        <div className="flexible-price-image-folder">
+                          {/* <h2>{post.title}</h2> */}
+                        </div>
+                        <span>₹ {post.field_price}</span>
+                      </div>
+                      <div className="flexible-price-folder2">
+                        <h2>{post.title.replace(/<\/?[^>]+(>|$)/g, "")}</h2>
                         <p>
-                          {post.field_description.replace(
-                            /<\/?[^>]+(>|$)/g,
-                            ""
-                          )}
+                          {post.field_sub_title.replace(/<\/?[^>]+(>|$)/g, "")}
                         </p>
                       </div>
+                      <div className="flexible-price-des-section">
+                        <div className="flexible-price-des-folder1">
+                          <p>
+                            {post.field_description.replace(
+                              /<\/?[^>]+(>|$)/g,
+                              ""
+                            )}
+                          </p>
+                        </div>
+                      </div>
+                      <div className="flexible-price-btn">
+                        <a
+                          href={post.field_razorpay_link}
+                          rel="noreferrer"
+                          target="_blank"
+                        >
+                          <i className="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a
+                          href={post.field_razorpay_link}
+                          rel="noreferrer"
+                          target="_blank"
+                          className="Choose-Plan"
+                        >
+                          Choose a Plan
+                        </a>
+                      </div>
                     </div>
-                    <div className="flexible-price-btn">
-                      <a
-                        href={post.field_razorpay_link}
-                        rel="noreferrer"
-                        target="_blank"
-                      >
-                        <i className="fa-solid fa-arrow-right"></i>
-                      </a>
-                      <a
-                        href={post.field_razorpay_link}
-                        rel="noreferrer"
-                        target="_blank"
-                        className="Choose-Plan"
-                      >
-                        Choose a Plan
-                      </a>
-                    </div>
-                  </div>
+                  </React.Fragment>
+
                 );
               })}
             </Slider>

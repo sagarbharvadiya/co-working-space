@@ -58,13 +58,19 @@ const Ourgallerylogosection = () => {
 
       <div className="brand_logos">
         <Slider {...settings}>
-          {posts.map((post, index) => (
-            <div className="">
-              <div className="our-gallery-logo-image">
-                <img src={`${REACT_APP_BASE_URL}${post.field_logo}`} alt="image" />
-              </div>
-            </div>
-          ))}
+          {posts.map((post, index) => {
+            return (
+              <React.Fragment key={post.id}>
+                <div className="">
+                  <div className="our-gallery-logo-image">
+                    <img src={`${REACT_APP_BASE_URL}${post.field_logo}`} alt="image" />
+                  </div>
+                </div>
+              </React.Fragment>
+            )
+          }
+
+          )}
         </Slider>
       </div>
     </>

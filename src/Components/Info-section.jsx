@@ -1,4 +1,4 @@
-// import React, { useEffect, useState } from "react";
+import React from "react";
 import dataJson from "../json_data/Amenities.js";
 
 
@@ -28,7 +28,7 @@ function Inforsection() {
                     <div className="info-folder">
                         {
                             dataJson.map((d, i) => (
-                                <>
+                                <React.Fragment key={d.id}>
                                     <div className="info-blog-box-section">
                                         <div className="info-image">
                                             <img src={d.image} alt={d.image} />
@@ -37,7 +37,7 @@ function Inforsection() {
                                         {/* <p>Extremely painful or again love pursue desire.</p> */}
                                     </div>
                                    
-                                </>
+                                </React.Fragment>
                             ))}
 
 

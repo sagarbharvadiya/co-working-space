@@ -71,7 +71,7 @@ function Homeslidersection() {
                   {includes.map((include, index2) => {
                     if (index === index2) {
                       return (
-                        <>
+                        <React.Fragment key={post.id}>
                           <div className="home-slider-image">
                             <img src={REACT_APP_BASE_URL + include.attributes.uri.url} alt="img" />
                           </div>
@@ -79,7 +79,7 @@ function Homeslidersection() {
                             <h2>{post.attributes.field_slider_title.value}</h2>
                             <span>{post.attributes.field_slide.value}</span>
                           </div>
-                        </>
+                        </React.Fragment>
                       );
                     }
                   })}

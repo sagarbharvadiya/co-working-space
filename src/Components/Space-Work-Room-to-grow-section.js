@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-// import Spacewraokdata from "../json_data/Spaceworkdata";
+import { Link } from "react-router-dom";
 
 function Spaceworkroomgrowsection() {
   const [posts, setPosts] = useState([]);
@@ -17,6 +17,7 @@ function Spaceworkroomgrowsection() {
       setPosts(posts);
     }
     loadPosts();
+    console.log(posts)
   }, []);
   return (
     <>
@@ -27,24 +28,31 @@ function Spaceworkroomgrowsection() {
             Space to Work & Room to Grow
           </h2>
           <div className="space-work-room-grow-folder">
-            {posts.map((post, index) => (
-              <div className="space-work-room-blog-box-section" key={post.id}>
-                <div className="space-work-image">
-                  <img
-                    src={`${REACT_APP_BASE_URL}${post.field_image}`}
-                    alt="banner"
-                  />
-                </div>
-                <div className="we_offer_desc">
-                  <span>WE OFFER</span>
-                  <h2>{post.title.replace(/<\/?[^>]+(>|$)/g, "")}</h2>
-                  <p>{post.field_what_we_offer_subtitle.replace(/<\/?[^>]+(>|$)/g, "")}</p>
-                  <a href="/" className="space-work-btn">
-                    Read More
-                  </a>
-                </div>
-              </div>
-            ))}
+            {posts.map((post, index) => {
+              return (
+                <React.Fragment key={post.id}>
+                  <div className="space-work-room-blog-box-section" key={post.id}>
+                    <div className="space-work-image">
+                      <img
+                        src={`${REACT_APP_BASE_URL}${post.field_image}`}
+                        alt="banner"
+                      />
+                    </div>
+                    <div className="we_offer_desc">
+                      <span>WE OFFER</span>
+                      <h2>{post.title.replace(/<\/?[^>]+(>|$)/g, "")}</h2>
+                      <p>{post.field_what_we_offer_subtitle.replace(/<\/?[^>]+(>|$)/g, "")}</p> 
+                      <Link data-item-id={post.nid} to={`/About/${post.nid}`} className="space-work-btn">
+                        Read More
+                      </Link>
+                    </div>
+                  </div>
+                </React.Fragment>
+
+              )
+            }
+
+            )}
           </div>
         </div>
       </div>
