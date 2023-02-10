@@ -38,7 +38,7 @@ const BlogFull = () => {
                     <img src={`${REACT_APP_BASE_URL}${posts[0]?.field_blog_image}`} alt="img" />
                     <div className="explore-latest-title">
                         <h2>{posts.title}</h2>
-                        <div>{dec}</div>
+                        <div><p>{posts.field_blog_desc}</p></div>
                         <div className="exlpore-latest-date-section">
                             <p className="explore-latest-date">
                                 {posts[0]?.field_blog_date}
