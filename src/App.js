@@ -9,6 +9,7 @@ import Workspaces from './Pages/Workspaces';
 import Blog from './Pages/Blog';
 import Contact from './Pages/Contact';
 import Footersection from './Components/Footer-section';
+import ChatBotApp from './Components/ChatBotApp';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route exact path='/Blog' element={<Blog/>}></Route>
         <Route exact path='/Contact' element={<Contact/>}></Route>
       </Routes>
+      <ChatBotApp/>
       <Footersection/>
     </>
   );

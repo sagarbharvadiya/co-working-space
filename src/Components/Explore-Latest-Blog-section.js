@@ -35,13 +35,13 @@ function Explorelatestblogsection() {
                     <h2>{post.title}</h2>
                     <p>{post.field_blog_desc.replace(/<\/?[^>]+(>|$)/g, "")}</p>
                     <div className="exlpore-latest-date-section">
-                      {/* <p className="explore-latest-date">
-                              {post.attributes.field_blog_date}
-                            </p> */}
+                      <p className="explore-latest-date">
+                        {post.field_blog_date}
+                      </p>
                       <div className="explore-latest-btn">
-                        {/* <a href="/">
-                                <i className="fa-solid fa-arrow-right"></i>
-                              </a> */}
+                        <a href="/">
+                          <i className="fa-solid fa-arrow-right"></i>
+                        </a>
                         <a href="/" className="explore-latest-read-more">
                           Read More
                         </a>

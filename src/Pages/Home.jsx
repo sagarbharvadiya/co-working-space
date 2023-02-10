@@ -15,7 +15,8 @@ import Spaceworkroomgrowsection from '../Components/Space-Work-Room-to-grow-sect
 // import UserCountersection from '../Components/User-counter-section'
 import Whataboutourservices from '../Components/Words-About-Our-Service-section'
 import Passioninspirationalsection from '../Components/Passion-Inspirational'
-import GoogleMap from '../Components/Google-map'
+import GoogleMap from '../Components/Google-map';
+
 
 const Home = () => {
 
@@ -38,6 +39,7 @@ const Home = () => {
       <Explorelatestblogsection />
       <Booktoursection />
       {/* <UserCountersection /> */}
+
     </>
   )
 }

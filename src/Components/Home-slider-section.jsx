@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 
+
 function Homeslidersection() {
   const settings = {
     dots: false,
@@ -13,7 +14,7 @@ function Homeslidersection() {
   };
   const [posts, setPosts] = useState([]);
   const [includes, setIncludes] = useState([]);
-  const { REACT_APP_BASE_URL } = process.env
+  const { REACT_APP_BASE_URL } = process.env;
   useEffect(() => {
     async function loadPosts() {
       const response = await fetch(
@@ -33,10 +34,11 @@ function Homeslidersection() {
   }, []);
   return (
     <>
-      <div className="home-slider-section">
-        <div className="homesliderwrapper">
-          <div className="home-slider-folder">
-            {/* <Slider {...settings}>
+      
+        <div className="home-slider-section">
+          <div className="homesliderwrapper">
+            <div className="home-slider-folder">
+              {/* <Slider {...settings}>
               {posts.map((post, index) => (
                 <div className="home-slider-blog-box-section">
                   <h1>{index}</h1>
@@ -65,30 +67,33 @@ function Homeslidersection() {
                 </div>
               ))}
             </Slider> */}
-            <Slider {...settings}>
-              {posts.map((post, index) => (
-                <div className="home-slider-blog-box-section">
-                  {includes.map((include, index2) => {
-                    if (index === index2) {
-                      return (
-                        <>
-                          <div className="home-slider-image">
-                            <img src={REACT_APP_BASE_URL + include.attributes.uri.url} alt="img" />
-                          </div>
-                          <div className="home-slider-text-folder1">
-                            <h2>{post.attributes.field_slider_title.value}</h2>
-                            <span>{post.attributes.field_slide.value}</span>
-                          </div>
-                        </>
-                      );
-                    }
-                  })}
-                </div>
-              ))}
-            </Slider>
+              <Slider {...settings}>
+                {posts.map((post, index) => (
+                  <div className="home-slider-blog-box-section">
+                    {includes.map((include, index2) => {
+                      if (index === index2) {
+                        return (
+                          <>
+                            <div className="home-slider-image">
+                              <img src={REACT_APP_BASE_URL + include.attributes.uri.url} alt="img" />  
+                            </div>
+                            <div className="home-slider-text-folder1">
+                              <h2>
+                                {post.attributes.field_slider_title.value}
+                              </h2>
+                              <span>{post.attributes.field_slide.value}</span>
+                            </div>
+                          </>
+                        );
+                      }
+                    })}
+                  </div>
+                ))}
+              </Slider>
+            </div>
           </div>
         </div>
-      </div>
+      
     </>
   );
 }
