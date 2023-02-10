@@ -8,7 +8,7 @@ const WhatWeOfferFull = () => {
     useEffect(() => {
         async function loadPosts() {
             const response = await fetch(
-                `${REACT_APP_BASE_URL}/divinehub/whatweoffer${productId}`
+                `${REACT_APP_BASE_URL}/divinehub/whatweoffer/${productId}`
             );
             if (!response.ok) {
                 // oups! something went wrong
@@ -26,14 +26,14 @@ const WhatWeOfferFull = () => {
                 <div className="space-work-room-blog-box-section" key={post[0]?.id}>
                     <div className="space-work-image">
                         <img
-                            src={`${REACT_APP_BASE_URL}${post[0]?.field_image}`}
+                            src={`${REACT_APP_BASE_URL}${post.field_image}`}
                             alt="banner"
                         />
                     </div>
                     <div className="we_offer_desc">
                         <span>WE OFFER</span>
-                        <h2>{post[0]?.title.replace(/<\/?[^>]+(>|$)/g, "")}</h2>
-                        <p>{post[0]?.field_what_we_offer_subtitle.replace(/<\/?[^>]+(>|$)/g, "")}</p>
+                        <h2>{post.title.replace(/<\/?[^>]+(>|$)/g, "")}</h2>
+                        <p>{post.field_what_we_offer_subtitle.replace(/<\/?[^>]+(>|$)/g, "")}</p>
                         
                     </div>
                 </div>
