@@ -26,7 +26,7 @@ const Whataboutourservices = () => {
     arrows: false,
     infinite: true,
     speed: 500,
-    autoplay: true,
+    autoplay: false,
     slidesToShow: 2,
     slidesToScroll: 1,
     responsive: [
