@@ -24,21 +24,28 @@ const BlogFull = () => {
     }, []);
 
     // const thisProduct = posts.find(prod => prod.nid === productId)
-    
+
     console.log(posts);
     let dec = ""
-    if(posts.length){
-         dec = parse(posts[0]?.field_blog_desc)
+    if (posts.length) {
+        dec = parse(posts[0]?.field_blog_desc)
     }
     return (
-        
-        <React.Fragment key={posts.nid}>
-            <div className=''>
-                <img src={posts[0]?.field_blog_image} alt="img" />
-                <p>{posts[0]?.title}</p>
-                <div>{dec}</div>
-                     
 
+        <React.Fragment key={posts.nid}>
+            <div className="explore-latest-blog-box-section">
+                <div className="explore-latest-blog-image">
+                    <img src={`${REACT_APP_BASE_URL}${posts[0]?.field_blog_image}`} alt="img" />
+                    <div className="explore-latest-title">
+                        <h2>{posts.title}</h2>
+                        <div>{dec}</div>
+                        <div className="exlpore-latest-date-section">
+                            <p className="explore-latest-date">
+                                {posts[0]?.field_blog_date}
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </React.Fragment>
     )

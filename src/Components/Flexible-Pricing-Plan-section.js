@@ -24,7 +24,7 @@ function Flexiblepriceplansection() {
     arrows: false,
     infinite: true,
     speed: 500,
-    autoplay: true,
+    autoplay: false,
     slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [
@@ -135,13 +135,13 @@ function Flexiblepriceplansection() {
                 return (
                   <div className="flexible-price-blog-box-section">
                     <div className="what-we-offer-image-folder">
-                      <img src={`${REACT_APP_BASE_URL}${post.field_icon}`} />
+                      <img src={`${REACT_APP_BASE_URL}${post.field_icon}`} alt={post.field_icon}/>
                     </div>
                     <div className="flexible-price-folder1">
                       <div className="flexible-price-image-folder">
                         {/* <h2>{post.title}</h2> */}
                       </div>
-                      <span>{post.field_price}</span>
+                      <span>₹ {post.field_price}</span>
                     </div>
                     <div className="flexible-price-folder2">
                       <h2>{post.title.replace(/<\/?[^>]+(>|$)/g, "")}</h2>
