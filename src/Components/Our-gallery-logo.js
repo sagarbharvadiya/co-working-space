@@ -57,6 +57,10 @@ const Ourgallerylogosection = () => {
     <>
 
       <div className="brand_logos">
+        <div className="gallery_logo_title">
+        <h2>Our Happy Customers</h2>
+
+        </div>
         <Slider {...settings}>
           {posts.map((post, index) => {
             return (
