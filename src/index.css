@@ -1569,7 +1569,11 @@ img {
   float: left;
   margin-right: 10px;
 }
-
+.gallery_logo_title h2{
+  text-align: center;
+  font-size: 48px;
+  margin-top: 30px;
+}
 .team-block-one .inner-box .lower-content .list>li>a {
   position: relative;
   display: inline-block;
@@ -2161,6 +2165,8 @@ img {
 .what-we-offer-image-folder img {
   /* border-radius: 14px; */
   border-radius: 14px 14px 0px 0px;
+  height: 260px;
+  width: 100%;
 }
 
 .what-we-offer-image-folder h2 {
@@ -2171,7 +2177,74 @@ img {
   max-width: 1204px;
   margin: 0px auto 0px auto;
 }
-
+.call-icon {
+  font-size: 12px;
+  position: absolute;
+  top: 1.7%;
+  right: 15%;
+  padding: 10px 11px;
+  border-radius: 100%;
+  background-color: #17b9ff;
+  color: white;
+}
+.fexlibel-pricing-popup-folder {
+  position: fixed;
+  top: 50%;
+  left: 0%;
+  right: 0%;
+  margin: auto;
+  transform: translateY(-50%);
+  background-color: #dddddd;
+  max-width: 520px;
+  width: 100%;
+  z-index: 99;
+  padding: 20px 30px;
+  background-color: white;
+  box-shadow: 0px 4px 4px #adadad;
+}
+.close-btn-folder {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  font-size: 22px;
+  color: black;
+  z-index: 100;
+}
+.close-btn{
+  color: black;
+}
+.flexivel-pricing-popup {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+.form-folder{
+  display: flex;
+  gap: 10px;
+}
+.form-inner-input {
+  width: 100%;
+  font-size: 14px;
+  padding: 15px 0px 15px 9px;
+  border: 1px solid #808080ad;
+  border-radius: 6px;
+}
+.flexivel-pricing-popup h2 {
+  font-size: 30px;
+  text-align: center;
+  margin: 10px 0px 10px 0px;
+}
+.form-submit-btns {
+  max-width: 136px;
+  text-align: center;
+  padding: 10px 0px;
+  border-radius: 10px;
+  background: var(--gredient-color);
+}
+.form-submit-btns a{
+  text-decoration: none;
+}
 @media (min-width: 1420px) and (max-width: 1920px) {
 
   .info-blog-box-section h4 {

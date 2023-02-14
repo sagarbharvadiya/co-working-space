@@ -26,6 +26,7 @@ function Topheadersection() {
                             <li><NavLink to="/Blog">Blog</NavLink></li>
                             <li><NavLink to="/Contact">Contact</NavLink></li>
                         </div>
+                        <a href="tel:9987547773" className="call-icon"><i class="fa-solid fa-phone"></i></a>
                         <div className="serach-folder">
                             <a>Search</a>
                             <a href="/" className="serach-icon"><i className="fa-solid fa-magnifying-glass"></i></a>
@@ -51,6 +52,7 @@ function Topheadersection() {
                         <li><NavLink to="/Blog">Blog</NavLink></li>
                         <li><NavLink to="/Contact">Contact</NavLink></li>
                     </div>
+                    
                     {/* <div className="serach-folder-contenar">
                         <span>Search</span>
                         <span onClick={() => setsearch_modal(!search_modal)} className="serach-icons"><i className="fa-solid fa-magnifying-glass"></i></span>
