@@ -17,6 +17,7 @@ import Whataboutourservices from '../Components/Words-About-Our-Service-section'
 import Passioninspirationalsection from '../Components/Passion-Inspirational'
 import GoogleMap from '../Components/Google-map';
 import ChatBotApp from '../Components/ChatBotApp';
+import Demoform from '../Components/Demo-form'
 
 const Home = () => {
 
@@ -37,8 +38,9 @@ const Home = () => {
       <Whataboutourservices />
       <Ourgallerylogosection />
       <Explorelatestblogsection />
-      <Booktoursection />
+      {/* <Booktoursection /> */}
       {/* <UserCountersection /> */}
+      <Demoform/>
       <ChatBotApp/>
     </>
   )

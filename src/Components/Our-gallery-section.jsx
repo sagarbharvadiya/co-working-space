@@ -39,7 +39,7 @@ function Ourgallerysection() {
             columnClassName="my-masonry-grid_column"
           >
           {includes.map((include, index2) => (
-            <div className="gallery-image-section">
+            <div className="gallery-image-section" key={include.id}>
              <img className="gallery-img" src={"https://divinehub.krushna53.com" + include.attributes.uri.url}  alt="image"/>
             </div>
           ))}
