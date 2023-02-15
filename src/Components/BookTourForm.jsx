@@ -3,7 +3,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import emailjs from "@emailjs/browser";
 
-function Demoform() {
+function BookTourForm() {
   const [name,setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -66,7 +66,7 @@ function Demoform() {
         );
         
     } else {
-      toast.error("Email is invalide");
+      toast.error("Please enter a correct email value");
     }
     // emailjs.sendForm('service_9spedfi', 'template_juxtdiw', form.current, 'JEUgk1jZnrZLqJz5k')
     //   .then((result) => {
@@ -151,4 +151,4 @@ function Demoform() {
   );
 }
 
-export default Demoform;
+export default BookTourForm;
