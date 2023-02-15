@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
+import dataJson from "../json_data/Data.json"
 
 const Whataboutourservices = () => {
   const [posts, setPosts] = useState([]);
@@ -70,8 +71,8 @@ const Whataboutourservices = () => {
         <div className="wordsaboutourservices">
           <div className="Better-Office-Environment">
             <div className="better-office-envirment-folder1">
-              <p>Testimonials</p>
-              <h2>Words About Our Service</h2>
+              <p>{dataJson.Testimonials_title}</p>
+              <h2>{dataJson.Testimonials_sub_title}</h2>
             </div>
           </div>
 

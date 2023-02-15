@@ -1,5 +1,6 @@
 import React from "react";
 import dataJson from "../json_data/Amenities.js";
+import datajsone from '../json_data/Data.json'
 
 
 function Inforsection() {
@@ -23,7 +24,7 @@ function Inforsection() {
     return (
         <>
             <div className="info-section">
-            <h2 className="amenities_text">Amenities</h2>
+            <h2 className="amenities_text">{datajsone.Amenities_title}</h2>
                 <div className="infowrapper">
                     <div className="info-folder">
                         {

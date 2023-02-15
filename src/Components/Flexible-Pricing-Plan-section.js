@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import dataJson from '../json_data/Data.json'
 
 function Flexiblepriceplansection() {
 
@@ -84,60 +85,11 @@ function Flexiblepriceplansection() {
     <>
       <div className="flexible-price-plan-section">
         <div className="flexiblepriceplanwrapper">
-          <span className="Pricing-Plans">Pricing & Plans</span>
+          <span className="Pricing-Plans">{dataJson.pricing_plan_title}</span>
           <h2 className="flexible-price-title">
-            We Have Flexible Pricing Plan
+            {dataJson.pricing_plan_sub_title}
           </h2>
           <div className="flexible-price-folder">
-            {/* {posts.map((post, index) => (
-              <div className="flexible-price-blog-box-section" key={post.id}>
-                {includes.map((include, index2) => {
-                  if (index === index2) {
-                    return (
-                      <>
-                        <div className="flexible-price-folder1">
-                          <div className="flexible-price-image-folder">
-                            <img
-                              src={
-                                REACT_APP_BASE_URL + include.attributes.uri.url
-                              } alt="img"
-                            />
-                          </div>
-                          <span>${post.attributes.field_price}</span>
-                        </div>
-                        <div className="flexible-price-folder2">
-                          <h2>{post.attributes.title}</h2>
-                          <p>
-                            {post.attributes.field_sub_title.replace(
-                              /<\/?[^>]+(>|$)/g,
-                              ""
-                            )}
-                          </p>
-                        </div>
-                        <div className="flexible-price-des-section">
-                          <div className="flexible-price-des-folder1">
-                            <p>
-                              {post.attributes.field_description.replace(
-                                /<\/?[^>]+(>|$)/g,
-                                ""
-                              )}
-                            </p>
-                          </div>
-                        </div>
-                        <div className="flexible-price-btn">
-                          <a href="/">
-                            <i className="fa-solid fa-arrow-right"></i>
-                          </a>
-                          <a href="/" className="Choose-Plan">
-                            Choose a Plan
-                          </a>
-                        </div>
-                      </>
-                    );
-                  }
-                })}
-              </div>
-            ))} */}
 
             {/*  */}
             <Slider {...settings}>
@@ -184,7 +136,7 @@ function Flexiblepriceplansection() {
                           // target="_blank"
                           className="Choose-Plan"
                         >
-                          Choose a Plan
+                          {dataJson.plan_btn}
                         </a>
                       </div>
                     </div>
