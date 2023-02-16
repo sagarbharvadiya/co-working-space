@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
+import dataJson from '../json_data/Data.json'
 
 const Ourgallerylogosection = () => {
   const [posts, setPosts] = useState([]);
@@ -57,6 +58,10 @@ const Ourgallerylogosection = () => {
     <>
 
       <div className="brand_logos">
+        <div className="gallery_logo_title">
+        <h2>{dataJson.Our_Happy_Customers}</h2>
+
+        </div>
         <Slider {...settings}>
           {posts.map((post, index) => {
             return (

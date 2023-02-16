@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import dataJson from '../json_data/Data.json'
 
 function Passioninspirationalsection() {
   const [posts, setPosts] = useState([]);
@@ -45,7 +46,7 @@ function Passioninspirationalsection() {
               )}
             </div>
             <div className="passtion-inspirational-right-section">
-              <div className="passtion-inspirational-text">WHO WE ARE</div>
+              <div className="passtion-inspirational-text">{dataJson.who_we_are_title}</div>
               <h2>{post.attributes.field_whoweare_title.value}</h2>
               <p>{post.attributes.field_whoweare_subtitle.value.replace(/<\/?[^>]+(>|$)/g, "")}</p>
               <div className="kodesk-diffrent-contenar">
@@ -59,7 +60,7 @@ function Passioninspirationalsection() {
                       <i className="fa-solid fa-arrow-right"></i>
                     </a>
                     <a href="/" className="Kodesk-difference-read-more">
-                      Read More
+                     {dataJson.read_more_btn}
                     </a>
                   </div>
                 </div>
@@ -73,7 +74,7 @@ function Passioninspirationalsection() {
                       <i className="fa-solid fa-arrow-right"></i>
                     </a>
                     <a href="/" className="Kodesk-difference-read-more">
-                      Read More
+                     {dataJson.read_more_btn}
                     </a>
                   </div>
                 </div>
