@@ -1,8 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ChatBot from "react-simple-chatbot";
 import { ThemeProvider } from "styled-components";
 
 const ChatBotApp = () => {
+  const [isChatbotOpen, setIsChatbotOpen] = useState(false);
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+  const handleScroll = () => {
+    if (window.pageYOffset > 500) {
+      setIsChatbotOpen(true);
+    }
+  };
   const steps = [
     {
       id: "0",
@@ -59,7 +69,7 @@ const ChatBotApp = () => {
   return (
     <div>
       <ThemeProvider theme={theme}>
-        <ChatBot steps={steps} />
+      {isChatbotOpen ? <ChatBot steps={steps} /> : null}
       </ThemeProvider>
     </div>
   );
