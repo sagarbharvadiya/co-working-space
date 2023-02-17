@@ -4519,7 +4519,8 @@ p.addres{
 
   .info-blog-box-section:nth-child(6),
   .info-blog-box-section:nth-child(7) {
-    width: 100%;
+    /* width: 100%; */
+    width: 334px;
   }
 
   .footer-folder1 p {
