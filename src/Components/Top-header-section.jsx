@@ -11,7 +11,7 @@ function Topheadersection() {
     const [search_modal, setsearch_modal] = React.useState(false);
     return (
         <>
-            <a href="/" onClick={toggleModal} className="show-btn"><i className="fa-solid fa-bars"></i></a>
+            <span onClick={toggleModal} className="show-btn"><i className="fa-solid fa-bars"></i></span>
             {modal && (
                 <div className="Top-Header-section">
                     <div className="Topheaderwrapper">
