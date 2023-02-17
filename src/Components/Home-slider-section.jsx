@@ -38,35 +38,6 @@ function Homeslidersection() {
         <div className="home-slider-section">
           <div className="homesliderwrapper">
             <div className="home-slider-folder">
-              {/* <Slider {...settings}>
-              {posts.map((post, index) => (
-                <div className="home-slider-blog-box-section">
-                  <h1>{index}</h1>
-                  {includes.map((include, index2) => (
-                    // if(index === index2){
-                    //   return(
-                    <>
-                    <div className="home-slider-image">
-                      <img
-                        src={"https://divinehub.krushna53.com" + include.attributes.uri.url}
-                      />
-                      <h5>{include.attributes.uri.url}</h5>
-                      <h2>{index2}</h2>
-                    </div>
-                      <div className="home-slider-text-folder1">
-                        <h2>
-                          {post.relationships.field_banner_image.data[index2].meta.alt}
-                        </h2>
-                        <span>{post.relationships.field_banner_image.data[index2].meta.title}</span>
-                        <a href="#" className="Read-More">
-                          Read More
-                        </a>
-                      </div>
-                      </>
-))}
-                </div>
-              ))}
-            </Slider> */}
               <Slider {...settings}>
                 {posts.map((post, index) => (
                   <div className="home-slider-blog-box-section">

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import dataJson from '../json_data/Data.json'
 
 function Spaceworkroomgrowsection() {
   const [posts, setPosts] = useState([]);
@@ -23,9 +24,9 @@ function Spaceworkroomgrowsection() {
     <>
       <div className="space-work-room-grow-section">
         <div className="spaceworkeoomgrowwrapper">
-          <h2 className="space-work-room-text">What We Offer</h2>
+          <h2 className="space-work-room-text">{dataJson.what_we_offer_title}</h2>
           <h2 className="space-work-room-title">
-            Space to Work & Room to Grow
+            {dataJson.what_we_offer_sub_title}
           </h2>
           <div className="space-work-room-grow-folder">
             {posts.map((post, index) => {
@@ -39,11 +40,11 @@ function Spaceworkroomgrowsection() {
                       />
                     </div>
                     <div className="we_offer_desc">
-                      <span>WE OFFER</span>
+                      <span>{dataJson.we_offer}</span>
                       <h2>{post.title.replace(/<\/?[^>]+(>|$)/g, "")}</h2>
                       <p>{post.field_what_we_offer_subtitle.replace(/<\/?[^>]+(>|$)/g, "")}</p> 
                       <Link data-item-id={post.nid} to={`/About/${post.nid}`} className="space-work-btn">
-                        Read More
+                       {dataJson.read_more_btn}
                       </Link>
                     </div>
                   </div>

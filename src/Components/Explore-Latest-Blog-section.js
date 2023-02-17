@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 // import dataJson from '../json_data/BlogFull'
+import dataJson from '../json_data/Data.json'
 
 
 function Explorelatestblogsection() {
@@ -25,8 +26,8 @@ function Explorelatestblogsection() {
     <>
       <div className="explore-latest-blog-section">
         <div className="explorelatestblogwrapper">
-          <span className="Pricing-Plans">Blog & Article</span>
-          <h2 className="flexible-price-title">Explore Latest From Blog</h2>
+          <span className="Pricing-Plans">{dataJson.blog_title}</span>
+          <h2 className="flexible-price-title">{dataJson.blog_sub_title}</h2>
           <div className="explore-latest-blog-folder">
             {posts.map((post, index) => {
               console.log(post.nid)
@@ -47,7 +48,7 @@ function Explorelatestblogsection() {
                             </p>
                           <div className="explore-latest-btn">
                             <Link data-item-id={post.nid} to={`/Blog/${post.nid}`} className="explore-latest-read-more">
-                            <i className="fa-solid fa-arrow-right"></i>  Read More
+                            <i className="fa-solid fa-arrow-right"></i>  {dataJson.read_more_btn}
                             </Link>
                           </div>
                         </div>

@@ -28,22 +28,21 @@ const BlogFull = () => {
     console.log(posts);
     let dec = ""
     if (posts.length) {
-        dec = parse(posts[0]?.field_blog_desc)
+        dec = parse(posts[0]?.field_blog_desc_1)
     }
     return (
 
         <React.Fragment key={posts.nid}>
-            <div className="explore-latest-blog-box-section">
-                <div className="explore-latest-blog-image">
-                    <img src={`${REACT_APP_BASE_URL}${posts[0]?.field_blog_image}`} alt="img" />
-                    <div className="explore-latest-title">
-                        <h2>{posts.title}</h2>
-                        <div><p>{posts.field_blog_desc}</p></div>
-                        <div className="exlpore-latest-date-section">
-                            <p className="explore-latest-date">
-                                {posts[0]?.field_blog_date}
-                            </p>
+            <div className='blogfull-section'>
+                <div className='blogfull-wrapper'>
+                    <div className='blog-full-blog-box-section'>
+                    <h2>{posts[0]?.title}</h2>
+                        <span> {posts[0]?.field_blog_date}</span>
+                        <div className='blogfull-image-folder'>
+                        <img src={`${REACT_APP_BASE_URL}${posts[0]?.field_blog_image}`} alt="img" />
                         </div>
+                        <p>{dec}
+                        </p>
                     </div>
                 </div>
             </div>
