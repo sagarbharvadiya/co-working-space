@@ -124,14 +124,14 @@ function Flexiblepriceplansection() {
                       </div>
                       <div className="flexible-price-btn" onClick={togglebtn}>
                         <a
-                          href="/"//{post.field_razorpay_link}
+                          href="#"//{post.field_razorpay_link}
                           // rel="noreferrer"
                           // target="_blank"
                         >
                           <i className="fa-solid fa-arrow-right"></i>
                         </a>
                         <a
-                          href="/"//{post.field_razorpay_link}
+                          href="#"//{post.field_razorpay_link}
                           // rel="noreferrer"
                           // target="_blank"
                           className="Choose-Plan"
