@@ -4,8 +4,6 @@ import { Route, Routes } from 'react-router-dom';
 import Topheadersection from './Components/Top-header-section';
 import Home from './Pages/Home';
 import About from './Pages/About';
-import Locations from './Pages/Locations';
-import Workspaces from './Pages/Workspaces';
 import Blog from './Pages/Blog';
 import Contact from './Pages/Contact';
 import Footersection from './Components/Footer-section';
@@ -25,8 +23,6 @@ function App() {
         <Route exact path='/About/:productId' element={<WhatWeOfferFull />}></Route>
         <Route exact path='/Contact' element={<Contact />}></Route>
       </Routes>
-      <Locations />
-      <Workspaces/>
       <Footersection />
     </>
   );
