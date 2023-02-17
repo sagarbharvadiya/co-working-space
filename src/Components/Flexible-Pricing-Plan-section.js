@@ -4,6 +4,7 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import dataJson from '../json_data/Data.json'
 
+
 function Flexiblepriceplansection() {
 
   const [date, setDate] = useState(new Date());
@@ -80,7 +81,7 @@ function Flexiblepriceplansection() {
       },
     ],
   };
-  
+
   return (
     <>
       <div className="flexible-price-plan-section">
@@ -125,8 +126,8 @@ function Flexiblepriceplansection() {
                       <div className="flexible-price-btn" onClick={togglebtn}>
                         <a
                           href="/"//{post.field_razorpay_link}
-                          // rel="noreferrer"
-                          // target="_blank"
+                        // rel="noreferrer"
+                        // target="_blank"
                         >
                           <i className="fa-solid fa-arrow-right"></i>
                         </a>
@@ -147,48 +148,49 @@ function Flexiblepriceplansection() {
             </Slider>
           </div>
         </div>
-        {modal &&(
+        {modal && (
           <div className="fexlibel-pricing-popup-folder">
-              <div className="flexivel-pricing-popup">
-                <h2>Contact Form</h2>
-                <div className="form-folder">
-                  <input type="text" className="form-inner-input" placeholder="Firts Name"/>
-                  <input type="text" className="form-inner-input" placeholder="Last Name"/>
-                </div>
-                <div className="form-folder">
-                  <input type="text" className="form-inner-input" placeholder="Company Name"/>
-                  <input type="text" className="form-inner-input" placeholder="Company Email"/>
-                </div>
-                <div className="form-folder">
-                  <input type="text" className="form-inner-input" placeholder="Phone Number"/>
-                  <input type="text" className="form-inner-input" placeholder="Meeting Rooms"/>
-                </div>
-                <div className="form-folder">
-                  <input type="text" className="form-inner-input" placeholder="Number of Guests"/>
-                  <DatePicker className="form-inner-input" selected={date} onChange={handleChange} />
-                  {/* <input type="Date" className="form-inner-input" placeholder="Date"/> */}
-                </div>
-                <div className="form-folder">
-                  <input type="text" className="form-inner-input" placeholder="Slot Available"/>
-                  <select className="form-inner-input">
-                    <option>select</option>
-                    <option value="">Virtual Office</option>
-                    <option value="">DAY PASS</option>
-                    <option value="">Private Offices</option>
-                    <option value="">Dedicated Desks</option>
-                  </select>
-                </div>
-                <textarea cols="30" rows="8" className="form-inner-input" placeholder="Massege"/>
-                <div className="form-submit-btns">
-                  <a href="/">Submit</a>
-                </div>
-                <div className="close-btn-folder" onClick={togglebtn}>
-                  <div className="close-btn"><i class="fa-solid fa-xmark"></i></div>
-                </div>
+            <div className="flexivel-pricing-popup">
+              <h2>Contact Form</h2>
+              <div className="form-folder">
+                <input type="text" className="form-inner-input" placeholder="First Name" />
+                <input type="text" className="form-inner-input" placeholder="Last Name" />
               </div>
+              <div className="form-folder">
+                <input type="text" className="form-inner-input" placeholder="Company Name" />
+                <input type="text" className="form-inner-input" placeholder="Company Email" />
+              </div>
+              <div className="form-folder">
+                <input type="text" className="form-inner-input" placeholder="Phone Number" />
+                <input type="text" className="form-inner-input" placeholder="Meeting Rooms" />
+              </div>
+              <div className="form-folder">
+                <input type="text" className="form-inner-input" placeholder="Number of Guests" />
+                <DatePicker className="form-inner-input" selected={date} onChange={handleChange} />
+                {/* <input type="Date" className="form-inner-input" placeholder="Date"/> */}
+              </div>
+              <div className="form-folder">
+                <input type="text" className="form-inner-input" placeholder="Slot Available" />
+                <select className="form-inner-input">
+                  <option>select</option>
+                  <option value="">Virtual Office</option>
+                  <option value="">DAY PASS</option>
+                  <option value="">Private Offices</option>
+                  <option value="">Dedicated Desks</option>
+                </select>
+              </div>
+              <textarea cols="30" rows="8" className="form-inner-input" placeholder="Massege" />
+              <div className="form-submit-btns">
+                <a href="/">Submit</a>
+              </div>
+              <div className="close-btn-folder" onClick={togglebtn}>
+                <div className="close-btn"><i class="fa-solid fa-xmark"></i></div>
+              </div>
+            </div>
           </div>
         )}
       </div>
+
     </>
   );
 }
