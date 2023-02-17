@@ -153,7 +153,7 @@ function Flexiblepriceplansection() {
             <div className="flexivel-pricing-popup">
               <h2>Contact Form</h2>
               <div className="form-folder">
-                <input type="text" className="form-inner-input" placeholder="Firts Name" />
+                <input type="text" className="form-inner-input" placeholder="First Name" />
                 <input type="text" className="form-inner-input" placeholder="Last Name" />
               </div>
               <div className="form-folder">
