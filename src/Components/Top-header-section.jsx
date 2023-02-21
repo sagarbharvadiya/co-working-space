@@ -63,6 +63,20 @@ function Topheadersection() {
                     </div>
                 </div>
             </div>
+            <div className="call-section">
+                <div className="call-container">
+                    <div className="call-folder">
+                    <a href={`tel:${datajson.phone_number}`}><i class="fa-solid fa-phone"></i>
+                        <p>Call Us</p>
+                    </a>
+                    </div>
+                    <div className="call-folder">
+                        <a href={datajson["whatsapp-API"]}><i class="fa-brands fa-whatsapp"></i>
+                        <p>Whatsapp</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </>
     )
 }
