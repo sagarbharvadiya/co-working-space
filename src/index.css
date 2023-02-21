@@ -1729,6 +1729,7 @@ img {
 
 .explore-latest-blog-image img {
   width: 100%;
+  height: 200px;
 }
 
 /* .explore-latest-title {
@@ -2285,7 +2286,7 @@ img {
 
 .blogfull-image-folder img {
   width: 100%;
-  height: 604px;
+  height: 500px;
 }
 
 .blog-full-blog-box-section p {
@@ -2322,13 +2323,20 @@ img {
 .Contact-number {
   color: red;
 }
-.location-addres h2{
+
+.location-addres h2 {
   font-size: 33px;
 }
-p.addres{
+
+p.addres {
   margin: 7px 0px;
-    font-size: 20px;
+  font-size: 20px;
 }
+
+.call-section {
+  display: none;
+}
+
 @media (min-width: 1420px) and (max-width: 1920px) {
 
   .info-blog-box-section h4 {
@@ -4109,6 +4117,58 @@ p.addres{
     bottom: -12%;
     top: auto;
   }
+
+  .call-container {
+    position: fixed;
+    bottom: 0%;
+    z-index: 10;
+    display: flex;
+    background: black;
+    color: white;
+    width: 100%;
+    background: var(--gredient-color);
+  }
+
+  .call-folder {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    padding: 11px 0px;
+  }
+
+  .call-folder a {
+    color: white;
+    font-size: 17px;
+    display: flex;
+    gap: 10px;
+  }
+  .call-folder a i{
+    font-size: 16px;
+    margin-top: 3px;
+  }
+
+  .call-folder p {
+    font-size: 18px;
+    color: white;
+  }
+
+  .call-section {
+    display: block;
+  }
+
+  .call-folder a .fa-whatsapp {
+    color: #fff;
+    background: linear-gradient(#25d366, #25d366) 14% 84%/16% 16% no-repeat, radial-gradient(#25d366 60%, transparent 0);
+  }
+
+  .rsc {
+    display: none;
+  }
+  .footer-copy .d-flex{
+    margin-top: 60px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -4131,7 +4191,7 @@ p.addres{
 
   .home-slider-image img {
     width: 100%;
-    height: 340px;
+    height: 200px;
   }
 
   .home-slider-text-folder1 h2,
@@ -4573,6 +4633,22 @@ p.addres{
   .menu li:nth-child(5) {
     border-bottom: none;
     border-bottom: none !important;
+  }
+
+  .blog-full-blog-box-section h2 {
+    margin: 0px 0px 10px 26px;
+  }
+
+  .blog-full-blog-box-section span {
+    margin-left: 25px;
+  }
+
+  .blogfull-image-folder img {
+    height: auto;
+  }
+
+  .blog-full-blog-box-section p {
+    margin: 0 10px;
   }
 }
 
