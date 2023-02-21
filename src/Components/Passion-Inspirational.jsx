@@ -19,6 +19,7 @@ function Passioninspirationalsection() {
       const posts = jsonData.data;
       setPosts(posts);
       setIncludes(includes);
+      console.log(posts)
     }
     loadPosts();
   },[]);
@@ -26,12 +27,11 @@ function Passioninspirationalsection() {
     <>
       {posts.map((post, index) => (
         <div className="passtion-inspirational-section">
-
           <div className="passtioninspriractionwrapper">
-            <div className="passtion-inspirational-left-section">
+            <div className="passtion-inspirational-left-section" key={post.id}>
               {includes.map((include, index2) => {
                 return (
-                  <React.Fragment key={post.id}>
+                  <React.Fragment>
                     <div className="passtion-inspirational-left-folder1">
                       <div className="passtion-inspirational-left-image1">
                         <img className="left-img" src=

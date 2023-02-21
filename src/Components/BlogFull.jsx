@@ -41,8 +41,8 @@ const BlogFull = () => {
                         <div className='blogfull-image-folder'>
                         <img src={`${REACT_APP_BASE_URL}${posts[0]?.field_blog_image}`} alt="img" />
                         </div>
-                        <p>{dec}
-                        </p>
+                        <div>{dec}
+                        </div>
                     </div>
                 </div>
             </div>
