@@ -4065,6 +4065,7 @@ p.addres {
 
   .info-blog-box-section {
     max-width: 384px;
+    margin: 0px;
   }
 
   .info-blog-box-section:nth-child(6),
