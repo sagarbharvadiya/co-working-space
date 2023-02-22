@@ -9,13 +9,14 @@ import Contact from './Pages/Contact';
 import Footersection from './Components/Footer-section';
 import BlogFull from './Components/BlogFull';
 import WhatWeOfferFull from './Components/What-We-Offer-full'
-
+import Scrolltotop from './Components/Scrolltotop';
 
 function App() {
   return (
     <>
    
       <Topheadersection />
+      <Scrolltotop/>
       <Routes>
         <Route exact path='/' element={<Home />}></Route>
         <Route exact path='/About' element={<About />}></Route>
