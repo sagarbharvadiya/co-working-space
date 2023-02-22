@@ -43,10 +43,9 @@ function Flexiblepriceplansection() {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          infinite: true,
-          dots: true,
+          initialSlide: 1,
           arrows: true,
-          autoplay: true,
+          autoplay: false,
         },
       },
       {
