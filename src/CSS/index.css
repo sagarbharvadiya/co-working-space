@@ -2647,6 +2647,9 @@ p.addres {
     z-index: 5;
     left: 5%;
   }
+  .location-section {
+    max-width: 640px;
+}
 }
 
 @media only screen and (max-width: 1024px) {
