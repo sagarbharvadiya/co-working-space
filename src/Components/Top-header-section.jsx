@@ -23,8 +23,8 @@ function Topheadersection() {
                             {/* <li><NavLink to="About">About</NavLink></li> */}
                             <li><NavLink onClick = {() => {scrollTo('Locations')}}>{datajson.nav_menu_Location}</NavLink></li>
                             <li><NavLink onClick = {() => {scrollTo('Workspaces')}}>{datajson.nav_menu_Workspaces}</NavLink></li>
-                            <li><NavLink to="/Blog">{datajson.nav_menu_Blog}</NavLink></li>
-                            <li><NavLink to="/Contact">{datajson.nav_menu_Contact}</NavLink></li>
+                            <li><NavLink to="Blog">{datajson.nav_menu_Blog}</NavLink></li>
+                            <li><NavLink to="Contact">{datajson.nav_menu_Contact}</NavLink></li>
                         </div>
 
                         <a href={`tel:${datajson.phone_number}`} className="call-icon"><i class="fa-solid fa-phone"></i></a>
@@ -49,8 +49,8 @@ function Topheadersection() {
                             {/* <li><NavLink to="About">About</NavLink></li> */}
                             <li><NavLink onClick = {() => {scrollTo('Locations')}}>{datajson.nav_menu_Location}</NavLink></li>
                             <li><NavLink onClick = {() => {scrollTo('Workspaces')}}>{datajson.nav_menu_Workspaces}</NavLink></li>
-                            <li><NavLink to="/Blog">{datajson.nav_menu_Blog}</NavLink></li>
-                            <li><NavLink to="/Contact">{datajson.nav_menu_Contact}</NavLink></li>
+                            <li><NavLink to="Blog">{datajson.nav_menu_Blog}</NavLink></li>
+                            <li><NavLink to="Contact">{datajson.nav_menu_Contact}</NavLink></li>
                     </div>
                     <div className="social_media">
                         <ul className="">
